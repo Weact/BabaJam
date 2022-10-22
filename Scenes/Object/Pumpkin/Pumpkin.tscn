@@ -1,14 +1,13 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
+[ext_resource path="res://Assets/Pumpkins/Citrouille1.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Object/Pumpkin/Pumpkin.gd" type="Script" id=2]
-
-[sub_resource type="StreamTexture" id=1]
-flags = 4
-load_path = "res://.import/pumpkin.png-2233f14bd8314292053f1b0fcea8ac3a.stex"
+[ext_resource path="res://Assets/Pumpkins/Citrouille2.png" type="Texture" id=3]
 
 [node name="Pumpkin" type="Node2D"]
 script = ExtResource( 2 )
+pumpkin_texture_1 = ExtResource( 1 )
+pumpkin_texture_2 = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
-scale = Vector2( 0.1, 0.1 )
-texture = SubResource( 1 )
+texture = ExtResource( 1 )

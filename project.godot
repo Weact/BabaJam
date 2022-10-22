@@ -25,6 +25,11 @@ _global_script_classes=[ {
 "path": "res://Scenes/Character/Bat/Player/BatPlayer.gd"
 }, {
 "base": "Node2D",
+"class": "Candy",
+"language": "GDScript",
+"path": "res://Scenes/candy/Candy.gd"
+}, {
+"base": "Node2D",
 "class": "Pumpkin",
 "language": "GDScript",
 "path": "res://Scenes/Object/Pumpkin/Pumpkin.gd"
@@ -33,6 +38,7 @@ _global_script_class_icons={
 "BatBase": "",
 "BatEntity": "",
 "BatPlayer": "",
+"Candy": "",
 "Pumpkin": ""
 }
 

@@ -1,5 +1,8 @@
 extends Node2D
+class_name Candy
 
+func is_class(value: String): return value == "Candy" or .is_class(value)
+func get_class() -> String: return "Candy"
 
 # Declare member variables here. Examples:
 # var a = 2

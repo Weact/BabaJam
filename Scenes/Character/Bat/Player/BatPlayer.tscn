@@ -20,9 +20,6 @@ drag_margin_bottom = 0.4
 editor_draw_limits = true
 editor_draw_drag_margin = true
 
-[node name="AnimatedSprite" parent="." index="1"]
-frame = 0
-
 [node name="ControlPoints" type="Node2D" parent="." index="3"]
 
 [node name="Point1" type="Position2D" parent="ControlPoints" index="0"]

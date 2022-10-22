@@ -30,7 +30,6 @@ func assign_new_bat_to_random_control_point() -> bool:
 		upgrade_bat()
 		
 	var control_point_node : Position2D = control_points_container.get_child(control_point_id)
-	print("Control Point assigned to " , control_point_node.name)
 	
 	if is_instance_valid(control_point_node):
 		var new_bat_instance = bat_entity_scene.instance()
@@ -55,6 +54,7 @@ func upgrade_bat() -> void:
 
 func update_total_bats() -> void:
 	total_bats += 1
+	GAME.emit_signal("bat_added", total_bats)
 
 func generate_new_control_point_index() -> int:
 	return randi() % control_points_container.get_child_count()

@@ -11,7 +11,7 @@ onready var pumpkins_container : Node2D = get_node("Pumpkins")
 onready var candies_container : Node2D = get_node("Candies")
 onready var game_timer : Timer = get_node("game_timer")
 onready var game_timer_progress : TextureProgress = get_node("UI/Control/game_timer_progress")
-onready var candies_counter_text : Label = get_node("UI/Control/VBoxContainer/candies_counter")
+onready var candies_counter_text : Label = get_node("UI/Control/VBoxContainer/CandyCounter")
 var candies_counter : int = 0
 var difficulty_multiplier : int = 0
 

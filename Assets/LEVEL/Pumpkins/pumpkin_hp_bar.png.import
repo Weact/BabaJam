@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Citrouille dead.png-0f67d2bb6ea70e70f0331750a51fdd7d.stex"
+path="res://.import/pumpkin_hp_bar.png-2da3ac35cf15e4067773f8897b1b682f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pumpkins/Citrouille dead.png"
-dest_files=[ "res://.import/Citrouille dead.png-0f67d2bb6ea70e70f0331750a51fdd7d.stex" ]
+source_file="res://Assets/LEVEL/Pumpkins/pumpkin_hp_bar.png"
+dest_files=[ "res://.import/pumpkin_hp_bar.png-2da3ac35cf15e4067773f8897b1b682f.stex" ]
 
 [params]
 

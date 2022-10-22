@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Citrouille bad.png-1225b1469e55a346e61abfd62fe008ea.stex"
+path="res://.import/Citrouille1.png-3454a4e75840bd903b7dffed5f3e2ec3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Pumpkins/Citrouille bad.png"
-dest_files=[ "res://.import/Citrouille bad.png-1225b1469e55a346e61abfd62fe008ea.stex" ]
+source_file="res://Assets/LEVEL/Pumpkins/Citrouille1.png"
+dest_files=[ "res://.import/Citrouille1.png-3454a4e75840bd903b7dffed5f3e2ec3.stex" ]
 
 [params]
 

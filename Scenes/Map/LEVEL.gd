@@ -1,4 +1,7 @@
 extends Node2D
+export var skull_texture : Texture = null
+export var sign_texture : Texture = null
+
 onready var pumpkin_scene : PackedScene = preload("res://Scenes/Object/Pumpkin/Pumpkin.tscn")
 onready var pumpkin_timer : Timer = get_node("pumpkin_timer")
 onready var game_timer : Timer = get_node("game_timer")

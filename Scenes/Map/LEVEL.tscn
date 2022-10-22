@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/Map/LEVEL.gd" type="Script" id=1]
 [ext_resource path="res://Assets/LEVEL/level_timer.png" type="Texture" id=2]
+[ext_resource path="res://Assets/LEVEL/Crâne.png" type="Texture" id=3]
+[ext_resource path="res://Assets/LEVEL/Panneau.png" type="Texture" id=4]
 
 [node name="LEVEL" type="Node2D"]
 script = ExtResource( 1 )
@@ -29,6 +31,10 @@ follow_viewport_enable = true
 [node name="Control" type="Control" parent="UI"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 2.0
+margin_top = -1.0
+margin_right = 2.0
+margin_bottom = -1.0
 
 [node name="game_timer_progress" type="TextureProgress" parent="UI/Control"]
 anchor_left = 1.0
@@ -39,3 +45,11 @@ step = 0.01
 value = 75.0
 texture_progress = ExtResource( 2 )
 fill_mode = 4
+
+[node name="Panneau" type="Sprite" parent="UI/Control"]
+position = Vector2( 426, 415 )
+texture = ExtResource( 4 )
+
+[node name="Crâne" type="Sprite" parent="UI/Control"]
+position = Vector2( 1015, 599 )
+texture = ExtResource( 3 )

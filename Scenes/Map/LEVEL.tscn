@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Map/LEVEL.gd" type="Script" id=1]
+
+[node name="LEVEL" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="TileMap" type="TileMap" parent="."]
+format = 1
+
+[node name="Bats" type="Node2D" parent="."]
+
+[node name="Pumpkins" type="Node2D" parent="."]
+
+[node name="Candies" type="Node2D" parent="."]

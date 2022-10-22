@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bat idle haut orange.png-218cd08fdbd99e1358ab83bebaf50cad.stex"
+path="res://.import/Bat right haut.png-eec9624415c2990be3410b1c126286e0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/other/Bat idle haut orange.png"
-dest_files=[ "res://.import/Bat idle haut orange.png-218cd08fdbd99e1358ab83bebaf50cad.stex" ]
+source_file="res://Assets/Bats/Bat right haut.png"
+dest_files=[ "res://.import/Bat right haut.png-eec9624415c2990be3410b1c126286e0.stex" ]
 
 [params]
 
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Faucheuse frame2.png-08fb195dfb5a1d81e98b9069c267f487.stex"
+path="res://.import/Curseur.png-e908be4378b6a4167ea45b87b759cfd9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/other/Faucheuse frame2.png"
-dest_files=[ "res://.import/Faucheuse frame2.png-08fb195dfb5a1d81e98b9069c267f487.stex" ]
+source_file="res://Assets/curseur/Curseur.png"
+dest_files=[ "res://.import/Curseur.png-e908be4378b6a4167ea45b87b759cfd9.stex" ]
 
 [params]
 
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

@@ -4,6 +4,7 @@ export var sign_texture : Texture = null
 
 onready var pumpkin_scene : PackedScene = preload("res://Scenes/Object/Pumpkin/Pumpkin.tscn")
 onready var pumpkin_timer : Timer = get_node("pumpkin_timer")
+onready var pumpkins_container : Node2D = get_node("Pumpkins")
 onready var game_timer : Timer = get_node("game_timer")
 onready var game_timer_progress : TextureProgress = get_node("UI/Control/game_timer_progress")
 var pumpkin_spawn_counter : int = 0
@@ -26,7 +27,7 @@ func add_pumpkin() -> void :
 	var coord : Vector2 = Vector2(rand_range(0,width),rand_range(0,height))
 	var new_pumpkin_instance = pumpkin_scene.instance()
 	new_pumpkin_instance.set_position(coord)
-	call_deferred("add_child",new_pumpkin_instance)
+	pumpkins_container.call_deferred("add_child", new_pumpkin_instance, true)
 	pumpkin_spawn_counter +=1
 
 func _on_pumpkin_timer_timeout() -> void :

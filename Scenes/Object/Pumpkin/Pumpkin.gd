@@ -1,4 +1,9 @@
 extends Node2D
+class_name Pumpkin
+
+func is_class(value: String): return value == "Pumpkin" or .is_class(value)
+func get_class() -> String: return "Pumpkin"
+
 export var real_pumpkin_hitpoints : int = 10
 export var pumpkin_texture_1 : Texture = null
 export var pumpkin_texture_2 : Texture = null
@@ -61,8 +66,6 @@ func update_pumpkin_texture_mid() -> void :
 
 func update_pumpkin_texture_low() -> void :
 	pumpkin_sprite.set_texture(pumpkin_texture_low)
-	
-func _unhandled_key_input(event):
-	if event.physical_scancode == KEY_A:
-		set_real_pumpkin_hitpoints(get_real_pumpkin_hitpoints()-0.5)
 
+func damage() -> void:
+	set_real_pumpkin_hitpoints(get_real_pumpkin_hitpoints() - 1)

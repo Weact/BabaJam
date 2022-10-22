@@ -75,6 +75,8 @@ func _on_bat_area_entered(area : Area2D) -> void:
 		if body.is_class("BatEntity") and body.has_method("control"):
 			if assign_new_bat_to_random_control_point():
 				body.control()
+		elif body.is_class("Pumpkin") and body.has_method("damage"):
+			body.damage()
 
 func _on_bat_area_exited(_area : Area2D) -> void:
 	pass

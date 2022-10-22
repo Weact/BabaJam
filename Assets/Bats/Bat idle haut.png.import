@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Citrouille bad.png-f68dfa9126fbbea69d776182a925b74d.stex"
+path="res://.import/Bat idle haut.png-2a046bfaa87eeee848ba39cab6bd99fc.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/other/Citrouille bad.png"
-dest_files=[ "res://.import/Citrouille bad.png-f68dfa9126fbbea69d776182a925b74d.stex" ]
+source_file="res://Assets/Bats/Bat idle haut.png"
+dest_files=[ "res://.import/Bat idle haut.png-2a046bfaa87eeee848ba39cab6bd99fc.stex" ]
 
 [params]
 
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

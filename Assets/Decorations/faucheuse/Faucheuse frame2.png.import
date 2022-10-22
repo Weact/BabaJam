@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bat right haut.png-6c13e7151aab62156861aa6bf7313c64.stex"
+path="res://.import/Faucheuse frame2.png-f96a68be28ddc1a12da854a2226e0190.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/other/Bat right haut.png"
-dest_files=[ "res://.import/Bat right haut.png-6c13e7151aab62156861aa6bf7313c64.stex" ]
+source_file="res://Assets/Decorations/faucheuse/Faucheuse frame2.png"
+dest_files=[ "res://.import/Faucheuse frame2.png-f96a68be28ddc1a12da854a2226e0190.stex" ]
 
 [params]
 
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

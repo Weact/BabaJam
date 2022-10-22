@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bat idle bas.png-b4e09eb048a52c23e1d36452a4dd41e9.stex"
+path="res://.import/Panneau.png-00b91a29225b1622fb9fef4471cb3099.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/other/Bat idle bas.png"
-dest_files=[ "res://.import/Bat idle bas.png-b4e09eb048a52c23e1d36452a4dd41e9.stex" ]
+source_file="res://Assets/Decorations/panneaux/Panneau.png"
+dest_files=[ "res://.import/Panneau.png-00b91a29225b1622fb9fef4471cb3099.stex" ]
 
 [params]
 
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0

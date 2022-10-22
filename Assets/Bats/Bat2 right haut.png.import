@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bat_Idle_Up.png-dc13e27d21edf8b7945e39aad737d85f.stex"
+path="res://.import/Bat2 right haut.png-c1c349088b6358e91aba974b37ad721f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bats/Bat_Idle_Up.png"
-dest_files=[ "res://.import/Bat_Idle_Up.png-dc13e27d21edf8b7945e39aad737d85f.stex" ]
+source_file="res://Assets/Bats/Bat2 right haut.png"
+dest_files=[ "res://.import/Bat2 right haut.png-c1c349088b6358e91aba974b37ad721f.stex" ]
 
 [params]
 

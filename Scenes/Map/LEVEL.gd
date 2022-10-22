@@ -11,7 +11,10 @@ onready var pumpkins_container : Node2D = get_node("Pumpkins")
 onready var candies_container : Node2D = get_node("Candies")
 onready var game_timer : Timer = get_node("game_timer")
 onready var game_timer_progress : TextureProgress = get_node("UI/Control/game_timer_progress")
-onready var candies_counter_text : Label = get_node("UI/Control/VBoxContainer/CandyCounter")
+onready var candies_counter_text : Label = get_node("UI/Control/HUD/Candies/CandyCounter")
+onready var bat_icon : TextureRect = get_node("UI/Control/HUD/Bats/BatIcon")
+onready var bat_counter_label : Label = get_node("UI/Control/HUD/Bats/BatCounter")
+
 var candies_counter : int = 0
 var difficulty_multiplier : int = 0
 
@@ -21,8 +24,10 @@ func _ready() -> void:
 	randomize()
 	pumpkin_timer.connect("timeout" , self , "_on_pumpkin_timer_timeout")
 	game_timer.connect("timeout", self , "_on_game_timer_timeout")
+	GAME.connect("bat_added", self, "_on_bat_added")
 	game_timer_progress.set_max(game_timer.wait_time)
 	game_timer_progress.set_value(game_timer_progress.max_value)
+	bat_icon.set_texture(GAME.bat_icon_texture)
 
 func _physics_process(delta: float) -> void:
 	game_timer_progress.set_value(game_timer.time_left)
@@ -49,10 +54,13 @@ func _on_pumpkin_destroyed(pumpkin) -> void :
 	new_candy_instance.set_position(pumpkin.get_position())
 	new_candy_instance.connect("tree_exiting" , self , "_on_candy_destroyed" , [new_candy_instance])
 	candies_container.call_deferred("add_child" , new_candy_instance , true)
-	game_timer.start(game_timer.get_time_left() + 2.0)
+	game_timer.wait_time = game_timer.get_time_left() + 2.0
+	game_timer.start()
 	game_timer_progress.set_max(game_timer.wait_time)
 
 func _on_candy_destroyed(candy) -> void :
 	candies_counter += 1
 	candies_counter_text.text = "X " + str(candies_counter)
-	
+
+func _on_bat_added(n : int) -> void:
+	bat_counter_label.text = "X " + str(n)

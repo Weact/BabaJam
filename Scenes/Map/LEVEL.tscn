@@ -5,13 +5,16 @@
 [ext_resource path="res://Scenes/Character/Bat/Entities/BatEntity.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Assets/LEVEL/level_timer.png" type="Texture" id=4]
 [ext_resource path="res://Assets/Decorations/decorations_sprite_sheet.png" type="Texture" id=5]
-[ext_resource path="res://Scenes/Map/NPC.gd" type="Script" id=6]
-[ext_resource path="res://Assets/font/SecretHalloween.ttf" type="DynamicFontData" id=7]
-[ext_resource path="res://Assets/candies/Bonbon.png" type="Texture" id=8]
+[ext_resource path="res://Assets/font/SecretHalloween.ttf" type="DynamicFontData" id=6]
+[ext_resource path="res://Assets/candies/Bonbon.png" type="Texture" id=7]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
-font_data = ExtResource( 7 )
+font_data = ExtResource( 6 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 30
+font_data = ExtResource( 6 )
 
 [sub_resource type="TileSet" id=2]
 0/name = "decorations_sprite_sheet.png 0"
@@ -120,17 +123,21 @@ value = 75.0
 texture_progress = ExtResource( 4 )
 fill_mode = 4
 
-[node name="VBoxContainer" type="HBoxContainer" parent="UI/Control"]
-margin_right = 132.0
+[node name="HUD" type="VBoxContainer" parent="UI/Control"]
+margin_right = 108.0
+margin_bottom = 86.0
+
+[node name="Candies" type="HBoxContainer" parent="UI/Control/HUD"]
+margin_right = 108.0
 margin_bottom = 64.0
 
-[node name="CandyIcon" type="TextureRect" parent="UI/Control/VBoxContainer"]
+[node name="CandyIcon" type="TextureRect" parent="UI/Control/HUD/Candies"]
 margin_right = 64.0
 margin_bottom = 64.0
-texture = ExtResource( 8 )
+texture = ExtResource( 7 )
 stretch_mode = 5
 
-[node name="CandyCounter" type="Label" parent="UI/Control/VBoxContainer"]
+[node name="CandyCounter" type="Label" parent="UI/Control/HUD/Candies"]
 margin_left = 68.0
 margin_top = 16.0
 margin_right = 108.0
@@ -138,13 +145,28 @@ margin_bottom = 47.0
 custom_fonts/font = SubResource( 1 )
 text = "0 x"
 
+[node name="Bats" type="HBoxContainer" parent="UI/Control/HUD"]
+margin_top = 68.0
+margin_right = 108.0
+margin_bottom = 99.0
+
+[node name="BatIcon" type="TextureRect" parent="UI/Control/HUD/Bats"]
+margin_bottom = 31.0
+
+[node name="BatCounter" type="Label" parent="UI/Control/HUD/Bats"]
+margin_left = 4.0
+margin_right = 44.0
+margin_bottom = 31.0
+custom_fonts/font = SubResource( 3 )
+text = "0 x"
+__meta__ = {
+"_editor_description_": ""
+}
+
 [node name="MapDecorations" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
 format = 1
 tile_data = PoolIntArray( -131068, 1, 0, -131060, 2, 0, 22, 4, 0, 131069, 1, 0, 65542, 0, 0, 65552, 3, 0, 131075, 3, 0, 131084, 1, 0, 196615, 4, 0, 196627, 2, 0, 393213, 2, 0, 327687, 2, 0, 327691, 3, 0, 327696, 0, 0, 327702, 0, 0, 393218, 0, 0, 393220, 4, 0, 393224, 1, 0, 524292, 1, 0, 524299, 2, 0, 524303, 3, 0, 655358, 3, 0, 589843, 4, 0, 655361, 0, 0, 655369, 4, 0, 786435, 0, 0, 786444, 3, 0, 786454, 0, 0 )
-
-[node name="NPC" type="Node2D" parent="."]
-script = ExtResource( 6 )
 
 [node name="Pumpkins" type="Node2D" parent="."]
 

@@ -28,9 +28,9 @@ func add_pumpkin() -> void :
 	new_pumpkin_instance.set_position(coord)
 	call_deferred("add_child",new_pumpkin_instance)
 	pumpkin_spawn_counter +=1
-	
+
 func _on_pumpkin_timer_timeout() -> void :
 	add_pumpkin()
-	
+
 func _on_game_timer_timeout () -> void :
 	get_tree().reload_current_scene()

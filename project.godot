@@ -8,11 +8,37 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "BatBase",
+"language": "GDScript",
+"path": "res://Scenes/Character/Bat/BatBase.gd"
+}, {
+"base": "BatBase",
+"class": "BatEntity",
+"language": "GDScript",
+"path": "res://Scenes/Character/Bat/Entities/BatEntity.gd"
+}, {
+"base": "BatBase",
+"class": "BatPlayer",
+"language": "GDScript",
+"path": "res://Scenes/Character/Bat/Player/BatPlayer.gd"
+} ]
+_global_script_class_icons={
+"BatBase": "",
+"BatEntity": "",
+"BatPlayer": ""
+}
+
 [application]
 
 config/name="BabaJam"
 run/main_scene="res://Scenes/Map/LEVEL.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+GAME="*res://Global/GAME.tscn"
 
 [display]
 
@@ -23,6 +49,19 @@ window/stretch/mode="2d"
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true
+
+[input]
+
+fullscreen={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":16777254,"unicode":0,"echo":false,"script":null)
+ ]
+}
+pause={
+"deadzone": 0.5,
+"events": [ Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":0,"alt":false,"shift":false,"control":false,"meta":false,"command":false,"pressed":false,"scancode":0,"physical_scancode":16777217,"unicode":0,"echo":false,"script":null)
+ ]
+}
 
 [physics]
 

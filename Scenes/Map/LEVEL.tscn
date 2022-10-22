@@ -1,9 +1,11 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Scenes/Map/LEVEL.gd" type="Script" id=1]
-[ext_resource path="res://Assets/LEVEL/level_timer.png" type="Texture" id=2]
-[ext_resource path="res://Assets/LEVEL/Crâne.png" type="Texture" id=3]
-[ext_resource path="res://Assets/LEVEL/Panneau.png" type="Texture" id=4]
+[ext_resource path="res://Scenes/Character/Bat/Player/BatPlayer.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Character/Bat/Entities/BatEntity.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/LEVEL/level_timer.png" type="Texture" id=4]
+[ext_resource path="res://Assets/LEVEL/Crâne.png" type="Texture" id=5]
+[ext_resource path="res://Assets/LEVEL/Panneau.png" type="Texture" id=6]
 
 [node name="LEVEL" type="Node2D"]
 script = ExtResource( 1 )
@@ -12,6 +14,4547 @@ script = ExtResource( 1 )
 format = 1
 
 [node name="Bats" type="Node2D" parent="."]
+
+[node name="BatPlayer" parent="Bats" instance=ExtResource( 2 )]
+position = Vector2( 592, 344 )
+
+[node name="Entities" type="Node2D" parent="Bats"]
+
+[node name="BatEntity" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 104, 96 )
+
+[node name="BatEntity2" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 144, 96 )
+
+[node name="BatEntity3" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 184, 96 )
+
+[node name="BatEntity4" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 112, 136 )
+
+[node name="BatEntity5" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 152, 136 )
+
+[node name="BatEntity6" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 192, 136 )
+
+[node name="BatEntity7" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 104, 176 )
+
+[node name="BatEntity8" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 144, 176 )
+
+[node name="BatEntity9" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 184, 176 )
+
+[node name="BatEntity10" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 96, 216 )
+
+[node name="BatEntity11" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 136, 216 )
+
+[node name="BatEntity12" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 176, 216 )
+
+[node name="BatEntity13" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 96, 256 )
+
+[node name="BatEntity14" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 136, 256 )
+
+[node name="BatEntity15" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 176, 256 )
+
+[node name="BatEntity16" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 96, 296 )
+
+[node name="BatEntity17" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 136, 296 )
+
+[node name="BatEntity18" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 176, 296 )
+
+[node name="BatEntity19" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 96, 336 )
+
+[node name="BatEntity20" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 136, 336 )
+
+[node name="BatEntity21" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 176, 336 )
+
+[node name="BatEntity22" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 224, 96 )
+
+[node name="BatEntity23" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 264, 96 )
+
+[node name="BatEntity24" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 304, 96 )
+
+[node name="BatEntity25" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 232, 136 )
+
+[node name="BatEntity26" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 272, 136 )
+
+[node name="BatEntity27" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 312, 136 )
+
+[node name="BatEntity28" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 224, 176 )
+
+[node name="BatEntity29" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 264, 176 )
+
+[node name="BatEntity30" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 304, 176 )
+
+[node name="BatEntity31" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 216, 216 )
+
+[node name="BatEntity32" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 256, 216 )
+
+[node name="BatEntity33" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 296, 216 )
+
+[node name="BatEntity34" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 216, 256 )
+
+[node name="BatEntity35" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 256, 256 )
+
+[node name="BatEntity36" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 296, 256 )
+
+[node name="BatEntity37" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 216, 296 )
+
+[node name="BatEntity38" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 256, 296 )
+
+[node name="BatEntity39" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 296, 296 )
+
+[node name="BatEntity40" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 216, 336 )
+
+[node name="BatEntity41" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 256, 336 )
+
+[node name="BatEntity42" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 296, 336 )
+
+[node name="BatEntity43" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 216, 384 )
+
+[node name="BatEntity44" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 256, 384 )
+
+[node name="BatEntity45" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 296, 384 )
+
+[node name="BatEntity46" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 224, 424 )
+
+[node name="BatEntity47" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 264, 424 )
+
+[node name="BatEntity48" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 304, 424 )
+
+[node name="BatEntity49" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 216, 464 )
+
+[node name="BatEntity50" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 256, 464 )
+
+[node name="BatEntity51" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 296, 464 )
+
+[node name="BatEntity52" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 208, 504 )
+
+[node name="BatEntity53" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 248, 504 )
+
+[node name="BatEntity54" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 288, 504 )
+
+[node name="BatEntity55" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 208, 544 )
+
+[node name="BatEntity56" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 248, 544 )
+
+[node name="BatEntity57" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 288, 544 )
+
+[node name="BatEntity58" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 208, 584 )
+
+[node name="BatEntity59" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 248, 584 )
+
+[node name="BatEntity60" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 288, 584 )
+
+[node name="BatEntity61" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 208, 624 )
+
+[node name="BatEntity62" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 248, 624 )
+
+[node name="BatEntity63" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 288, 624 )
+
+[node name="BatEntity64" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 96, 384 )
+
+[node name="BatEntity65" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 136, 384 )
+
+[node name="BatEntity66" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 176, 384 )
+
+[node name="BatEntity67" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 104, 424 )
+
+[node name="BatEntity68" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 144, 424 )
+
+[node name="BatEntity69" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 184, 424 )
+
+[node name="BatEntity70" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 96, 464 )
+
+[node name="BatEntity71" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 136, 464 )
+
+[node name="BatEntity72" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 176, 464 )
+
+[node name="BatEntity73" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 88, 504 )
+
+[node name="BatEntity74" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 128, 504 )
+
+[node name="BatEntity75" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 168, 504 )
+
+[node name="BatEntity76" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 88, 544 )
+
+[node name="BatEntity77" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 128, 544 )
+
+[node name="BatEntity78" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 168, 544 )
+
+[node name="BatEntity79" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 88, 584 )
+
+[node name="BatEntity80" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 128, 584 )
+
+[node name="BatEntity81" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 168, 584 )
+
+[node name="BatEntity82" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 88, 624 )
+
+[node name="BatEntity83" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 128, 624 )
+
+[node name="BatEntity84" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 168, 624 )
+
+[node name="BatEntity85" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 344, 384 )
+
+[node name="BatEntity86" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 384, 384 )
+
+[node name="BatEntity87" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 424, 384 )
+
+[node name="BatEntity88" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 352, 424 )
+
+[node name="BatEntity89" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 392, 424 )
+
+[node name="BatEntity90" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 432, 424 )
+
+[node name="BatEntity91" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 344, 464 )
+
+[node name="BatEntity92" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 384, 464 )
+
+[node name="BatEntity93" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 424, 464 )
+
+[node name="BatEntity94" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 336, 504 )
+
+[node name="BatEntity95" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 376, 504 )
+
+[node name="BatEntity96" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 416, 504 )
+
+[node name="BatEntity97" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 336, 544 )
+
+[node name="BatEntity98" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 376, 544 )
+
+[node name="BatEntity99" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 416, 544 )
+
+[node name="BatEntity100" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 336, 584 )
+
+[node name="BatEntity101" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 376, 584 )
+
+[node name="BatEntity102" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 416, 584 )
+
+[node name="BatEntity103" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 336, 624 )
+
+[node name="BatEntity104" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 376, 624 )
+
+[node name="BatEntity105" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 416, 624 )
+
+[node name="BatEntity106" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 352, 104 )
+
+[node name="BatEntity107" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 392, 104 )
+
+[node name="BatEntity108" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 432, 104 )
+
+[node name="BatEntity109" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 360, 144 )
+
+[node name="BatEntity110" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 400, 144 )
+
+[node name="BatEntity111" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 440, 144 )
+
+[node name="BatEntity112" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 352, 184 )
+
+[node name="BatEntity113" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 392, 184 )
+
+[node name="BatEntity114" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 432, 184 )
+
+[node name="BatEntity115" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 344, 224 )
+
+[node name="BatEntity116" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 384, 224 )
+
+[node name="BatEntity117" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 424, 224 )
+
+[node name="BatEntity118" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 344, 264 )
+
+[node name="BatEntity119" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 384, 264 )
+
+[node name="BatEntity120" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 424, 264 )
+
+[node name="BatEntity121" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 344, 304 )
+
+[node name="BatEntity122" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 384, 304 )
+
+[node name="BatEntity123" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 424, 304 )
+
+[node name="BatEntity124" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 344, 344 )
+
+[node name="BatEntity125" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 384, 344 )
+
+[node name="BatEntity126" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 424, 344 )
+
+[node name="BatEntity127" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 720, 96 )
+
+[node name="BatEntity128" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 760, 96 )
+
+[node name="BatEntity129" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 800, 96 )
+
+[node name="BatEntity130" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 728, 136 )
+
+[node name="BatEntity131" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 768, 136 )
+
+[node name="BatEntity132" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 808, 136 )
+
+[node name="BatEntity133" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 720, 176 )
+
+[node name="BatEntity134" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 760, 176 )
+
+[node name="BatEntity135" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 800, 176 )
+
+[node name="BatEntity136" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 712, 216 )
+
+[node name="BatEntity137" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 752, 216 )
+
+[node name="BatEntity138" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 792, 216 )
+
+[node name="BatEntity139" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 712, 256 )
+
+[node name="BatEntity140" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 752, 256 )
+
+[node name="BatEntity141" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 792, 256 )
+
+[node name="BatEntity142" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 712, 296 )
+
+[node name="BatEntity143" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 752, 296 )
+
+[node name="BatEntity144" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 792, 296 )
+
+[node name="BatEntity145" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 712, 336 )
+
+[node name="BatEntity146" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 752, 336 )
+
+[node name="BatEntity147" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 792, 336 )
+
+[node name="BatEntity148" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 840, 96 )
+
+[node name="BatEntity149" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 880, 96 )
+
+[node name="BatEntity150" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 920, 96 )
+
+[node name="BatEntity151" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 848, 136 )
+
+[node name="BatEntity152" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 888, 136 )
+
+[node name="BatEntity153" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 928, 136 )
+
+[node name="BatEntity154" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 840, 176 )
+
+[node name="BatEntity155" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 880, 176 )
+
+[node name="BatEntity156" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 920, 176 )
+
+[node name="BatEntity157" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 832, 216 )
+
+[node name="BatEntity158" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 872, 216 )
+
+[node name="BatEntity159" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 912, 216 )
+
+[node name="BatEntity160" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 832, 256 )
+
+[node name="BatEntity161" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 872, 256 )
+
+[node name="BatEntity162" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 912, 256 )
+
+[node name="BatEntity163" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 832, 296 )
+
+[node name="BatEntity164" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 872, 296 )
+
+[node name="BatEntity165" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 912, 296 )
+
+[node name="BatEntity166" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 832, 336 )
+
+[node name="BatEntity167" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 872, 336 )
+
+[node name="BatEntity168" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 912, 336 )
+
+[node name="BatEntity169" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 832, 384 )
+
+[node name="BatEntity170" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 872, 384 )
+
+[node name="BatEntity171" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 912, 384 )
+
+[node name="BatEntity172" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 840, 424 )
+
+[node name="BatEntity173" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 880, 424 )
+
+[node name="BatEntity174" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 920, 424 )
+
+[node name="BatEntity175" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 832, 464 )
+
+[node name="BatEntity176" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 872, 464 )
+
+[node name="BatEntity177" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 912, 464 )
+
+[node name="BatEntity178" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 824, 504 )
+
+[node name="BatEntity179" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 864, 504 )
+
+[node name="BatEntity180" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 904, 504 )
+
+[node name="BatEntity181" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 824, 544 )
+
+[node name="BatEntity182" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 864, 544 )
+
+[node name="BatEntity183" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 904, 544 )
+
+[node name="BatEntity184" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 824, 584 )
+
+[node name="BatEntity185" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 864, 584 )
+
+[node name="BatEntity186" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 904, 584 )
+
+[node name="BatEntity187" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 824, 624 )
+
+[node name="BatEntity188" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 864, 624 )
+
+[node name="BatEntity189" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 904, 624 )
+
+[node name="BatEntity190" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 712, 384 )
+
+[node name="BatEntity191" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 752, 384 )
+
+[node name="BatEntity192" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 792, 384 )
+
+[node name="BatEntity193" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 720, 424 )
+
+[node name="BatEntity194" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 760, 424 )
+
+[node name="BatEntity195" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 800, 424 )
+
+[node name="BatEntity196" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 712, 464 )
+
+[node name="BatEntity197" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 752, 464 )
+
+[node name="BatEntity198" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 792, 464 )
+
+[node name="BatEntity199" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 704, 504 )
+
+[node name="BatEntity200" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 744, 504 )
+
+[node name="BatEntity201" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 784, 504 )
+
+[node name="BatEntity202" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 704, 544 )
+
+[node name="BatEntity203" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 744, 544 )
+
+[node name="BatEntity204" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 784, 544 )
+
+[node name="BatEntity205" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 704, 584 )
+
+[node name="BatEntity206" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 744, 584 )
+
+[node name="BatEntity207" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 784, 584 )
+
+[node name="BatEntity208" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 704, 624 )
+
+[node name="BatEntity209" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 744, 624 )
+
+[node name="BatEntity210" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 784, 624 )
+
+[node name="BatEntity211" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 960, 384 )
+
+[node name="BatEntity212" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1000, 384 )
+
+[node name="BatEntity213" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1040, 384 )
+
+[node name="BatEntity214" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 968, 424 )
+
+[node name="BatEntity215" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1008, 424 )
+
+[node name="BatEntity216" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1048, 424 )
+
+[node name="BatEntity217" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 960, 464 )
+
+[node name="BatEntity218" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1000, 464 )
+
+[node name="BatEntity219" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1040, 464 )
+
+[node name="BatEntity220" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 952, 504 )
+
+[node name="BatEntity221" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 992, 504 )
+
+[node name="BatEntity222" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1032, 504 )
+
+[node name="BatEntity223" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 952, 544 )
+
+[node name="BatEntity224" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 992, 544 )
+
+[node name="BatEntity225" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1032, 544 )
+
+[node name="BatEntity226" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 952, 584 )
+
+[node name="BatEntity227" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 992, 584 )
+
+[node name="BatEntity228" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1032, 584 )
+
+[node name="BatEntity229" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 952, 624 )
+
+[node name="BatEntity230" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 992, 624 )
+
+[node name="BatEntity231" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1032, 624 )
+
+[node name="BatEntity232" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 968, 104 )
+
+[node name="BatEntity233" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1008, 104 )
+
+[node name="BatEntity234" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1048, 104 )
+
+[node name="BatEntity235" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 976, 144 )
+
+[node name="BatEntity236" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1016, 144 )
+
+[node name="BatEntity237" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1056, 144 )
+
+[node name="BatEntity238" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 968, 184 )
+
+[node name="BatEntity239" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1008, 184 )
+
+[node name="BatEntity240" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1048, 184 )
+
+[node name="BatEntity241" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 960, 224 )
+
+[node name="BatEntity242" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1000, 224 )
+
+[node name="BatEntity243" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1040, 224 )
+
+[node name="BatEntity244" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 960, 264 )
+
+[node name="BatEntity245" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1000, 264 )
+
+[node name="BatEntity246" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1040, 264 )
+
+[node name="BatEntity247" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 960, 304 )
+
+[node name="BatEntity248" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1000, 304 )
+
+[node name="BatEntity249" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1040, 304 )
+
+[node name="BatEntity250" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 960, 344 )
+
+[node name="BatEntity251" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1000, 344 )
+
+[node name="BatEntity252" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1040, 344 )
+
+[node name="BatEntity253" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 88, 672 )
+
+[node name="BatEntity254" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 128, 672 )
+
+[node name="BatEntity255" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 168, 672 )
+
+[node name="BatEntity256" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 96, 712 )
+
+[node name="BatEntity257" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 136, 712 )
+
+[node name="BatEntity258" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 176, 712 )
+
+[node name="BatEntity259" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 88, 752 )
+
+[node name="BatEntity260" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 128, 752 )
+
+[node name="BatEntity261" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 168, 752 )
+
+[node name="BatEntity262" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 80, 792 )
+
+[node name="BatEntity263" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 120, 792 )
+
+[node name="BatEntity264" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 160, 792 )
+
+[node name="BatEntity265" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 80, 832 )
+
+[node name="BatEntity266" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 120, 832 )
+
+[node name="BatEntity267" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 160, 832 )
+
+[node name="BatEntity268" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 80, 872 )
+
+[node name="BatEntity269" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 120, 872 )
+
+[node name="BatEntity270" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 160, 872 )
+
+[node name="BatEntity271" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 80, 912 )
+
+[node name="BatEntity272" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 120, 912 )
+
+[node name="BatEntity273" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 160, 912 )
+
+[node name="BatEntity274" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 208, 672 )
+
+[node name="BatEntity275" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 248, 672 )
+
+[node name="BatEntity276" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 288, 672 )
+
+[node name="BatEntity277" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 216, 712 )
+
+[node name="BatEntity278" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 256, 712 )
+
+[node name="BatEntity279" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 296, 712 )
+
+[node name="BatEntity280" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 208, 752 )
+
+[node name="BatEntity281" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 248, 752 )
+
+[node name="BatEntity282" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 288, 752 )
+
+[node name="BatEntity283" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 200, 792 )
+
+[node name="BatEntity284" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 240, 792 )
+
+[node name="BatEntity285" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 280, 792 )
+
+[node name="BatEntity286" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 200, 832 )
+
+[node name="BatEntity287" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 240, 832 )
+
+[node name="BatEntity288" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 280, 832 )
+
+[node name="BatEntity289" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 200, 872 )
+
+[node name="BatEntity290" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 240, 872 )
+
+[node name="BatEntity291" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 280, 872 )
+
+[node name="BatEntity292" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 200, 912 )
+
+[node name="BatEntity293" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 240, 912 )
+
+[node name="BatEntity294" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 280, 912 )
+
+[node name="BatEntity295" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 200, 960 )
+
+[node name="BatEntity296" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 240, 960 )
+
+[node name="BatEntity297" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 280, 960 )
+
+[node name="BatEntity298" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 208, 1000 )
+
+[node name="BatEntity299" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 248, 1000 )
+
+[node name="BatEntity300" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 288, 1000 )
+
+[node name="BatEntity301" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 200, 1040 )
+
+[node name="BatEntity302" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 240, 1040 )
+
+[node name="BatEntity303" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 280, 1040 )
+
+[node name="BatEntity304" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 192, 1080 )
+
+[node name="BatEntity305" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 232, 1080 )
+
+[node name="BatEntity306" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 272, 1080 )
+
+[node name="BatEntity307" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 192, 1120 )
+
+[node name="BatEntity308" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 232, 1120 )
+
+[node name="BatEntity309" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 272, 1120 )
+
+[node name="BatEntity310" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 192, 1160 )
+
+[node name="BatEntity311" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 232, 1160 )
+
+[node name="BatEntity312" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 272, 1160 )
+
+[node name="BatEntity313" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 192, 1200 )
+
+[node name="BatEntity314" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 232, 1200 )
+
+[node name="BatEntity315" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 272, 1200 )
+
+[node name="BatEntity316" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 80, 960 )
+
+[node name="BatEntity317" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 120, 960 )
+
+[node name="BatEntity318" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 160, 960 )
+
+[node name="BatEntity319" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 88, 1000 )
+
+[node name="BatEntity320" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 128, 1000 )
+
+[node name="BatEntity321" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 168, 1000 )
+
+[node name="BatEntity322" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 80, 1040 )
+
+[node name="BatEntity323" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 120, 1040 )
+
+[node name="BatEntity324" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 160, 1040 )
+
+[node name="BatEntity325" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 72, 1080 )
+
+[node name="BatEntity326" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 112, 1080 )
+
+[node name="BatEntity327" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 152, 1080 )
+
+[node name="BatEntity328" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 72, 1120 )
+
+[node name="BatEntity329" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 112, 1120 )
+
+[node name="BatEntity330" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 152, 1120 )
+
+[node name="BatEntity331" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 72, 1160 )
+
+[node name="BatEntity332" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 112, 1160 )
+
+[node name="BatEntity333" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 152, 1160 )
+
+[node name="BatEntity334" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 72, 1200 )
+
+[node name="BatEntity335" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 112, 1200 )
+
+[node name="BatEntity336" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 152, 1200 )
+
+[node name="BatEntity337" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 328, 960 )
+
+[node name="BatEntity338" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 368, 960 )
+
+[node name="BatEntity339" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 408, 960 )
+
+[node name="BatEntity340" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 336, 1000 )
+
+[node name="BatEntity341" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 376, 1000 )
+
+[node name="BatEntity342" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 416, 1000 )
+
+[node name="BatEntity343" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 328, 1040 )
+
+[node name="BatEntity344" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 368, 1040 )
+
+[node name="BatEntity345" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 408, 1040 )
+
+[node name="BatEntity346" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 320, 1080 )
+
+[node name="BatEntity347" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 360, 1080 )
+
+[node name="BatEntity348" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 400, 1080 )
+
+[node name="BatEntity349" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 320, 1120 )
+
+[node name="BatEntity350" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 360, 1120 )
+
+[node name="BatEntity351" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 400, 1120 )
+
+[node name="BatEntity352" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 320, 1160 )
+
+[node name="BatEntity353" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 360, 1160 )
+
+[node name="BatEntity354" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 400, 1160 )
+
+[node name="BatEntity355" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 320, 1200 )
+
+[node name="BatEntity356" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 360, 1200 )
+
+[node name="BatEntity357" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 400, 1200 )
+
+[node name="BatEntity358" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 336, 680 )
+
+[node name="BatEntity359" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 376, 680 )
+
+[node name="BatEntity360" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 416, 680 )
+
+[node name="BatEntity361" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 344, 720 )
+
+[node name="BatEntity362" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 384, 720 )
+
+[node name="BatEntity363" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 424, 720 )
+
+[node name="BatEntity364" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 336, 760 )
+
+[node name="BatEntity365" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 376, 760 )
+
+[node name="BatEntity366" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 416, 760 )
+
+[node name="BatEntity367" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 328, 800 )
+
+[node name="BatEntity368" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 368, 800 )
+
+[node name="BatEntity369" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 408, 800 )
+
+[node name="BatEntity370" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 328, 840 )
+
+[node name="BatEntity371" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 368, 840 )
+
+[node name="BatEntity372" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 408, 840 )
+
+[node name="BatEntity373" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 328, 880 )
+
+[node name="BatEntity374" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 368, 880 )
+
+[node name="BatEntity375" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 408, 880 )
+
+[node name="BatEntity376" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 328, 920 )
+
+[node name="BatEntity377" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 368, 920 )
+
+[node name="BatEntity378" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 408, 920 )
+
+[node name="BatEntity379" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 704, 672 )
+
+[node name="BatEntity380" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 744, 672 )
+
+[node name="BatEntity381" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 784, 672 )
+
+[node name="BatEntity382" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 712, 712 )
+
+[node name="BatEntity383" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 752, 712 )
+
+[node name="BatEntity384" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 792, 712 )
+
+[node name="BatEntity385" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 704, 752 )
+
+[node name="BatEntity386" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 744, 752 )
+
+[node name="BatEntity387" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 784, 752 )
+
+[node name="BatEntity388" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 696, 792 )
+
+[node name="BatEntity389" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 736, 792 )
+
+[node name="BatEntity390" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 776, 792 )
+
+[node name="BatEntity391" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 696, 832 )
+
+[node name="BatEntity392" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 736, 832 )
+
+[node name="BatEntity393" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 776, 832 )
+
+[node name="BatEntity394" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 696, 872 )
+
+[node name="BatEntity395" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 736, 872 )
+
+[node name="BatEntity396" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 776, 872 )
+
+[node name="BatEntity397" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 696, 912 )
+
+[node name="BatEntity398" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 736, 912 )
+
+[node name="BatEntity399" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 776, 912 )
+
+[node name="BatEntity400" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 824, 672 )
+
+[node name="BatEntity401" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 864, 672 )
+
+[node name="BatEntity402" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 904, 672 )
+
+[node name="BatEntity403" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 832, 712 )
+
+[node name="BatEntity404" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 872, 712 )
+
+[node name="BatEntity405" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 912, 712 )
+
+[node name="BatEntity406" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 824, 752 )
+
+[node name="BatEntity407" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 864, 752 )
+
+[node name="BatEntity408" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 904, 752 )
+
+[node name="BatEntity409" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 816, 792 )
+
+[node name="BatEntity410" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 856, 792 )
+
+[node name="BatEntity411" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 896, 792 )
+
+[node name="BatEntity412" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 816, 832 )
+
+[node name="BatEntity413" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 856, 832 )
+
+[node name="BatEntity414" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 896, 832 )
+
+[node name="BatEntity415" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 816, 872 )
+
+[node name="BatEntity416" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 856, 872 )
+
+[node name="BatEntity417" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 896, 872 )
+
+[node name="BatEntity418" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 816, 912 )
+
+[node name="BatEntity419" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 856, 912 )
+
+[node name="BatEntity420" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 896, 912 )
+
+[node name="BatEntity421" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 816, 960 )
+
+[node name="BatEntity422" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 856, 960 )
+
+[node name="BatEntity423" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 896, 960 )
+
+[node name="BatEntity424" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 824, 1000 )
+
+[node name="BatEntity425" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 864, 1000 )
+
+[node name="BatEntity426" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 904, 1000 )
+
+[node name="BatEntity427" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 816, 1040 )
+
+[node name="BatEntity428" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 856, 1040 )
+
+[node name="BatEntity429" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 896, 1040 )
+
+[node name="BatEntity430" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 808, 1080 )
+
+[node name="BatEntity431" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 848, 1080 )
+
+[node name="BatEntity432" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 888, 1080 )
+
+[node name="BatEntity433" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 808, 1120 )
+
+[node name="BatEntity434" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 848, 1120 )
+
+[node name="BatEntity435" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 888, 1120 )
+
+[node name="BatEntity436" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 808, 1160 )
+
+[node name="BatEntity437" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 848, 1160 )
+
+[node name="BatEntity438" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 888, 1160 )
+
+[node name="BatEntity439" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 808, 1200 )
+
+[node name="BatEntity440" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 848, 1200 )
+
+[node name="BatEntity441" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 888, 1200 )
+
+[node name="BatEntity442" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 696, 960 )
+
+[node name="BatEntity443" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 736, 960 )
+
+[node name="BatEntity444" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 776, 960 )
+
+[node name="BatEntity445" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 704, 1000 )
+
+[node name="BatEntity446" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 744, 1000 )
+
+[node name="BatEntity447" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 784, 1000 )
+
+[node name="BatEntity448" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 696, 1040 )
+
+[node name="BatEntity449" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 736, 1040 )
+
+[node name="BatEntity450" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 776, 1040 )
+
+[node name="BatEntity451" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 688, 1080 )
+
+[node name="BatEntity452" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 728, 1080 )
+
+[node name="BatEntity453" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 768, 1080 )
+
+[node name="BatEntity454" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 688, 1120 )
+
+[node name="BatEntity455" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 728, 1120 )
+
+[node name="BatEntity456" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 768, 1120 )
+
+[node name="BatEntity457" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 688, 1160 )
+
+[node name="BatEntity458" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 728, 1160 )
+
+[node name="BatEntity459" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 768, 1160 )
+
+[node name="BatEntity460" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 688, 1200 )
+
+[node name="BatEntity461" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 728, 1200 )
+
+[node name="BatEntity462" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 768, 1200 )
+
+[node name="BatEntity463" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 944, 960 )
+
+[node name="BatEntity464" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 984, 960 )
+
+[node name="BatEntity465" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1024, 960 )
+
+[node name="BatEntity466" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 952, 1000 )
+
+[node name="BatEntity467" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 992, 1000 )
+
+[node name="BatEntity468" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1032, 1000 )
+
+[node name="BatEntity469" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 944, 1040 )
+
+[node name="BatEntity470" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 984, 1040 )
+
+[node name="BatEntity471" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1024, 1040 )
+
+[node name="BatEntity472" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 936, 1080 )
+
+[node name="BatEntity473" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 976, 1080 )
+
+[node name="BatEntity474" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1016, 1080 )
+
+[node name="BatEntity475" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 936, 1120 )
+
+[node name="BatEntity476" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 976, 1120 )
+
+[node name="BatEntity477" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1016, 1120 )
+
+[node name="BatEntity478" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 936, 1160 )
+
+[node name="BatEntity479" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 976, 1160 )
+
+[node name="BatEntity480" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1016, 1160 )
+
+[node name="BatEntity481" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 936, 1200 )
+
+[node name="BatEntity482" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 976, 1200 )
+
+[node name="BatEntity483" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1016, 1200 )
+
+[node name="BatEntity484" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 952, 680 )
+
+[node name="BatEntity485" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 992, 680 )
+
+[node name="BatEntity486" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1032, 680 )
+
+[node name="BatEntity487" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 960, 720 )
+
+[node name="BatEntity488" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1000, 720 )
+
+[node name="BatEntity489" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1040, 720 )
+
+[node name="BatEntity490" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 952, 760 )
+
+[node name="BatEntity491" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 992, 760 )
+
+[node name="BatEntity492" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1032, 760 )
+
+[node name="BatEntity493" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 944, 800 )
+
+[node name="BatEntity494" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 984, 800 )
+
+[node name="BatEntity495" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1024, 800 )
+
+[node name="BatEntity496" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 944, 840 )
+
+[node name="BatEntity497" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 984, 840 )
+
+[node name="BatEntity498" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1024, 840 )
+
+[node name="BatEntity499" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 944, 880 )
+
+[node name="BatEntity500" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 984, 880 )
+
+[node name="BatEntity501" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1024, 880 )
+
+[node name="BatEntity502" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 944, 920 )
+
+[node name="BatEntity503" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 984, 920 )
+
+[node name="BatEntity504" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1024, 920 )
+
+[node name="BatEntity505" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1112, 104 )
+
+[node name="BatEntity506" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1152, 104 )
+
+[node name="BatEntity507" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1192, 104 )
+
+[node name="BatEntity508" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1120, 144 )
+
+[node name="BatEntity509" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1160, 144 )
+
+[node name="BatEntity510" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1200, 144 )
+
+[node name="BatEntity511" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1112, 184 )
+
+[node name="BatEntity512" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1152, 184 )
+
+[node name="BatEntity513" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1192, 184 )
+
+[node name="BatEntity514" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1104, 224 )
+
+[node name="BatEntity515" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1144, 224 )
+
+[node name="BatEntity516" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1184, 224 )
+
+[node name="BatEntity517" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1104, 264 )
+
+[node name="BatEntity518" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1144, 264 )
+
+[node name="BatEntity519" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1184, 264 )
+
+[node name="BatEntity520" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1104, 304 )
+
+[node name="BatEntity521" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1144, 304 )
+
+[node name="BatEntity522" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1184, 304 )
+
+[node name="BatEntity523" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1104, 344 )
+
+[node name="BatEntity524" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1144, 344 )
+
+[node name="BatEntity525" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1184, 344 )
+
+[node name="BatEntity526" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1232, 104 )
+
+[node name="BatEntity527" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1272, 104 )
+
+[node name="BatEntity528" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1312, 104 )
+
+[node name="BatEntity529" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1240, 144 )
+
+[node name="BatEntity530" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1280, 144 )
+
+[node name="BatEntity531" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1320, 144 )
+
+[node name="BatEntity532" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1232, 184 )
+
+[node name="BatEntity533" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1272, 184 )
+
+[node name="BatEntity534" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1312, 184 )
+
+[node name="BatEntity535" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1224, 224 )
+
+[node name="BatEntity536" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1264, 224 )
+
+[node name="BatEntity537" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1304, 224 )
+
+[node name="BatEntity538" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1224, 264 )
+
+[node name="BatEntity539" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1264, 264 )
+
+[node name="BatEntity540" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1304, 264 )
+
+[node name="BatEntity541" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1224, 304 )
+
+[node name="BatEntity542" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1264, 304 )
+
+[node name="BatEntity543" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1304, 304 )
+
+[node name="BatEntity544" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1224, 344 )
+
+[node name="BatEntity545" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1264, 344 )
+
+[node name="BatEntity546" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1304, 344 )
+
+[node name="BatEntity547" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1224, 392 )
+
+[node name="BatEntity548" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1264, 392 )
+
+[node name="BatEntity549" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1304, 392 )
+
+[node name="BatEntity550" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1232, 432 )
+
+[node name="BatEntity551" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1272, 432 )
+
+[node name="BatEntity552" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1312, 432 )
+
+[node name="BatEntity553" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1224, 472 )
+
+[node name="BatEntity554" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1264, 472 )
+
+[node name="BatEntity555" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1304, 472 )
+
+[node name="BatEntity556" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1216, 512 )
+
+[node name="BatEntity557" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1256, 512 )
+
+[node name="BatEntity558" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1296, 512 )
+
+[node name="BatEntity559" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1216, 552 )
+
+[node name="BatEntity560" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1256, 552 )
+
+[node name="BatEntity561" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1296, 552 )
+
+[node name="BatEntity562" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1216, 592 )
+
+[node name="BatEntity563" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1256, 592 )
+
+[node name="BatEntity564" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1296, 592 )
+
+[node name="BatEntity565" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1216, 632 )
+
+[node name="BatEntity566" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1256, 632 )
+
+[node name="BatEntity567" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1296, 632 )
+
+[node name="BatEntity568" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1104, 392 )
+
+[node name="BatEntity569" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1144, 392 )
+
+[node name="BatEntity570" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1184, 392 )
+
+[node name="BatEntity571" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1112, 432 )
+
+[node name="BatEntity572" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1152, 432 )
+
+[node name="BatEntity573" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1192, 432 )
+
+[node name="BatEntity574" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1104, 472 )
+
+[node name="BatEntity575" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1144, 472 )
+
+[node name="BatEntity576" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1184, 472 )
+
+[node name="BatEntity577" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1096, 512 )
+
+[node name="BatEntity578" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1136, 512 )
+
+[node name="BatEntity579" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1176, 512 )
+
+[node name="BatEntity580" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1096, 552 )
+
+[node name="BatEntity581" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1136, 552 )
+
+[node name="BatEntity582" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1176, 552 )
+
+[node name="BatEntity583" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1096, 592 )
+
+[node name="BatEntity584" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1136, 592 )
+
+[node name="BatEntity585" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1176, 592 )
+
+[node name="BatEntity586" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1096, 632 )
+
+[node name="BatEntity587" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1136, 632 )
+
+[node name="BatEntity588" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1176, 632 )
+
+[node name="BatEntity589" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1352, 392 )
+
+[node name="BatEntity590" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1392, 392 )
+
+[node name="BatEntity591" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1432, 392 )
+
+[node name="BatEntity592" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1360, 432 )
+
+[node name="BatEntity593" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1400, 432 )
+
+[node name="BatEntity594" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1440, 432 )
+
+[node name="BatEntity595" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1352, 472 )
+
+[node name="BatEntity596" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1392, 472 )
+
+[node name="BatEntity597" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1432, 472 )
+
+[node name="BatEntity598" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1344, 512 )
+
+[node name="BatEntity599" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1384, 512 )
+
+[node name="BatEntity600" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1424, 512 )
+
+[node name="BatEntity601" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1344, 552 )
+
+[node name="BatEntity602" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1384, 552 )
+
+[node name="BatEntity603" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1424, 552 )
+
+[node name="BatEntity604" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1344, 592 )
+
+[node name="BatEntity605" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1384, 592 )
+
+[node name="BatEntity606" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1424, 592 )
+
+[node name="BatEntity607" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1344, 632 )
+
+[node name="BatEntity608" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1384, 632 )
+
+[node name="BatEntity609" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1424, 632 )
+
+[node name="BatEntity610" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1360, 112 )
+
+[node name="BatEntity611" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1400, 112 )
+
+[node name="BatEntity612" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1440, 112 )
+
+[node name="BatEntity613" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1368, 152 )
+
+[node name="BatEntity614" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1408, 152 )
+
+[node name="BatEntity615" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1448, 152 )
+
+[node name="BatEntity616" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1360, 192 )
+
+[node name="BatEntity617" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1400, 192 )
+
+[node name="BatEntity618" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1440, 192 )
+
+[node name="BatEntity619" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1352, 232 )
+
+[node name="BatEntity620" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1392, 232 )
+
+[node name="BatEntity621" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1432, 232 )
+
+[node name="BatEntity622" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1352, 272 )
+
+[node name="BatEntity623" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1392, 272 )
+
+[node name="BatEntity624" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1432, 272 )
+
+[node name="BatEntity625" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1352, 312 )
+
+[node name="BatEntity626" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1392, 312 )
+
+[node name="BatEntity627" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1432, 312 )
+
+[node name="BatEntity628" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1352, 352 )
+
+[node name="BatEntity629" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1392, 352 )
+
+[node name="BatEntity630" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1432, 352 )
+
+[node name="BatEntity631" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1728, 104 )
+
+[node name="BatEntity632" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1768, 104 )
+
+[node name="BatEntity633" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1808, 104 )
+
+[node name="BatEntity634" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1736, 144 )
+
+[node name="BatEntity635" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1776, 144 )
+
+[node name="BatEntity636" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1816, 144 )
+
+[node name="BatEntity637" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1728, 184 )
+
+[node name="BatEntity638" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1768, 184 )
+
+[node name="BatEntity639" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1808, 184 )
+
+[node name="BatEntity640" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1720, 224 )
+
+[node name="BatEntity641" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1760, 224 )
+
+[node name="BatEntity642" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1800, 224 )
+
+[node name="BatEntity643" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1720, 264 )
+
+[node name="BatEntity644" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1760, 264 )
+
+[node name="BatEntity645" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1800, 264 )
+
+[node name="BatEntity646" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1720, 304 )
+
+[node name="BatEntity647" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1760, 304 )
+
+[node name="BatEntity648" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1800, 304 )
+
+[node name="BatEntity649" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1720, 344 )
+
+[node name="BatEntity650" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1760, 344 )
+
+[node name="BatEntity651" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1800, 344 )
+
+[node name="BatEntity652" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1848, 104 )
+
+[node name="BatEntity653" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1888, 104 )
+
+[node name="BatEntity654" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1928, 104 )
+
+[node name="BatEntity655" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1856, 144 )
+
+[node name="BatEntity656" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1896, 144 )
+
+[node name="BatEntity657" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1936, 144 )
+
+[node name="BatEntity658" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1848, 184 )
+
+[node name="BatEntity659" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1888, 184 )
+
+[node name="BatEntity660" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1928, 184 )
+
+[node name="BatEntity661" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1840, 224 )
+
+[node name="BatEntity662" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1880, 224 )
+
+[node name="BatEntity663" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1920, 224 )
+
+[node name="BatEntity664" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1840, 264 )
+
+[node name="BatEntity665" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1880, 264 )
+
+[node name="BatEntity666" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1920, 264 )
+
+[node name="BatEntity667" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1840, 304 )
+
+[node name="BatEntity668" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1880, 304 )
+
+[node name="BatEntity669" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1920, 304 )
+
+[node name="BatEntity670" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1840, 344 )
+
+[node name="BatEntity671" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1880, 344 )
+
+[node name="BatEntity672" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1920, 344 )
+
+[node name="BatEntity673" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1840, 392 )
+
+[node name="BatEntity674" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1880, 392 )
+
+[node name="BatEntity675" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1920, 392 )
+
+[node name="BatEntity676" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1848, 432 )
+
+[node name="BatEntity677" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1888, 432 )
+
+[node name="BatEntity678" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1928, 432 )
+
+[node name="BatEntity679" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1840, 472 )
+
+[node name="BatEntity680" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1880, 472 )
+
+[node name="BatEntity681" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1920, 472 )
+
+[node name="BatEntity682" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1832, 512 )
+
+[node name="BatEntity683" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1872, 512 )
+
+[node name="BatEntity684" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1912, 512 )
+
+[node name="BatEntity685" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1832, 552 )
+
+[node name="BatEntity686" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1872, 552 )
+
+[node name="BatEntity687" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1912, 552 )
+
+[node name="BatEntity688" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1832, 592 )
+
+[node name="BatEntity689" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1872, 592 )
+
+[node name="BatEntity690" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1912, 592 )
+
+[node name="BatEntity691" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1832, 632 )
+
+[node name="BatEntity692" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1872, 632 )
+
+[node name="BatEntity693" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1912, 632 )
+
+[node name="BatEntity694" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1720, 392 )
+
+[node name="BatEntity695" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1760, 392 )
+
+[node name="BatEntity696" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1800, 392 )
+
+[node name="BatEntity697" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1728, 432 )
+
+[node name="BatEntity698" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1768, 432 )
+
+[node name="BatEntity699" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1808, 432 )
+
+[node name="BatEntity700" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1720, 472 )
+
+[node name="BatEntity701" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1760, 472 )
+
+[node name="BatEntity702" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1800, 472 )
+
+[node name="BatEntity703" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1712, 512 )
+
+[node name="BatEntity704" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1752, 512 )
+
+[node name="BatEntity705" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1792, 512 )
+
+[node name="BatEntity706" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1712, 552 )
+
+[node name="BatEntity707" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1752, 552 )
+
+[node name="BatEntity708" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1792, 552 )
+
+[node name="BatEntity709" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1712, 592 )
+
+[node name="BatEntity710" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1752, 592 )
+
+[node name="BatEntity711" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1792, 592 )
+
+[node name="BatEntity712" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1712, 632 )
+
+[node name="BatEntity713" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1752, 632 )
+
+[node name="BatEntity714" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1792, 632 )
+
+[node name="BatEntity715" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1968, 392 )
+
+[node name="BatEntity716" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2008, 392 )
+
+[node name="BatEntity717" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2048, 392 )
+
+[node name="BatEntity718" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1976, 432 )
+
+[node name="BatEntity719" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2016, 432 )
+
+[node name="BatEntity720" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2056, 432 )
+
+[node name="BatEntity721" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1968, 472 )
+
+[node name="BatEntity722" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2008, 472 )
+
+[node name="BatEntity723" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2048, 472 )
+
+[node name="BatEntity724" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1960, 512 )
+
+[node name="BatEntity725" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2000, 512 )
+
+[node name="BatEntity726" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2040, 512 )
+
+[node name="BatEntity727" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1960, 552 )
+
+[node name="BatEntity728" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2000, 552 )
+
+[node name="BatEntity729" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2040, 552 )
+
+[node name="BatEntity730" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1960, 592 )
+
+[node name="BatEntity731" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2000, 592 )
+
+[node name="BatEntity732" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2040, 592 )
+
+[node name="BatEntity733" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1960, 632 )
+
+[node name="BatEntity734" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2000, 632 )
+
+[node name="BatEntity735" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2040, 632 )
+
+[node name="BatEntity736" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1976, 112 )
+
+[node name="BatEntity737" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2016, 112 )
+
+[node name="BatEntity738" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2056, 112 )
+
+[node name="BatEntity739" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1984, 152 )
+
+[node name="BatEntity740" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2024, 152 )
+
+[node name="BatEntity741" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2064, 152 )
+
+[node name="BatEntity742" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1976, 192 )
+
+[node name="BatEntity743" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2016, 192 )
+
+[node name="BatEntity744" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2056, 192 )
+
+[node name="BatEntity745" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1968, 232 )
+
+[node name="BatEntity746" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2008, 232 )
+
+[node name="BatEntity747" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2048, 232 )
+
+[node name="BatEntity748" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1968, 272 )
+
+[node name="BatEntity749" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2008, 272 )
+
+[node name="BatEntity750" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2048, 272 )
+
+[node name="BatEntity751" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1968, 312 )
+
+[node name="BatEntity752" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2008, 312 )
+
+[node name="BatEntity753" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2048, 312 )
+
+[node name="BatEntity754" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1968, 352 )
+
+[node name="BatEntity755" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2008, 352 )
+
+[node name="BatEntity756" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2048, 352 )
+
+[node name="BatEntity757" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -904, 88 )
+
+[node name="BatEntity758" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -864, 88 )
+
+[node name="BatEntity759" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -824, 88 )
+
+[node name="BatEntity760" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -896, 128 )
+
+[node name="BatEntity761" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -856, 128 )
+
+[node name="BatEntity762" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -816, 128 )
+
+[node name="BatEntity763" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -904, 168 )
+
+[node name="BatEntity764" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -864, 168 )
+
+[node name="BatEntity765" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -824, 168 )
+
+[node name="BatEntity766" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -912, 208 )
+
+[node name="BatEntity767" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -872, 208 )
+
+[node name="BatEntity768" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -832, 208 )
+
+[node name="BatEntity769" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -912, 248 )
+
+[node name="BatEntity770" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -872, 248 )
+
+[node name="BatEntity771" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -832, 248 )
+
+[node name="BatEntity772" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -912, 288 )
+
+[node name="BatEntity773" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -872, 288 )
+
+[node name="BatEntity774" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -832, 288 )
+
+[node name="BatEntity775" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -912, 328 )
+
+[node name="BatEntity776" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -872, 328 )
+
+[node name="BatEntity777" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -832, 328 )
+
+[node name="BatEntity778" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -784, 88 )
+
+[node name="BatEntity779" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -744, 88 )
+
+[node name="BatEntity780" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -704, 88 )
+
+[node name="BatEntity781" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -776, 128 )
+
+[node name="BatEntity782" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -736, 128 )
+
+[node name="BatEntity783" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -696, 128 )
+
+[node name="BatEntity784" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -784, 168 )
+
+[node name="BatEntity785" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -744, 168 )
+
+[node name="BatEntity786" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -704, 168 )
+
+[node name="BatEntity787" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -792, 208 )
+
+[node name="BatEntity788" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -752, 208 )
+
+[node name="BatEntity789" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -712, 208 )
+
+[node name="BatEntity790" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -792, 248 )
+
+[node name="BatEntity791" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -752, 248 )
+
+[node name="BatEntity792" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -712, 248 )
+
+[node name="BatEntity793" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -792, 288 )
+
+[node name="BatEntity794" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -752, 288 )
+
+[node name="BatEntity795" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -712, 288 )
+
+[node name="BatEntity796" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -792, 328 )
+
+[node name="BatEntity797" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -752, 328 )
+
+[node name="BatEntity798" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -712, 328 )
+
+[node name="BatEntity799" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -792, 376 )
+
+[node name="BatEntity800" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -752, 376 )
+
+[node name="BatEntity801" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -712, 376 )
+
+[node name="BatEntity802" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -784, 416 )
+
+[node name="BatEntity803" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -744, 416 )
+
+[node name="BatEntity804" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -704, 416 )
+
+[node name="BatEntity805" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -792, 456 )
+
+[node name="BatEntity806" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -752, 456 )
+
+[node name="BatEntity807" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -712, 456 )
+
+[node name="BatEntity808" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -800, 496 )
+
+[node name="BatEntity809" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -760, 496 )
+
+[node name="BatEntity810" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -720, 496 )
+
+[node name="BatEntity811" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -800, 536 )
+
+[node name="BatEntity812" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -760, 536 )
+
+[node name="BatEntity813" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -720, 536 )
+
+[node name="BatEntity814" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -800, 576 )
+
+[node name="BatEntity815" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -760, 576 )
+
+[node name="BatEntity816" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -720, 576 )
+
+[node name="BatEntity817" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -800, 616 )
+
+[node name="BatEntity818" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -760, 616 )
+
+[node name="BatEntity819" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -720, 616 )
+
+[node name="BatEntity820" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -912, 376 )
+
+[node name="BatEntity821" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -872, 376 )
+
+[node name="BatEntity822" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -832, 376 )
+
+[node name="BatEntity823" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -904, 416 )
+
+[node name="BatEntity824" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -864, 416 )
+
+[node name="BatEntity825" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -824, 416 )
+
+[node name="BatEntity826" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -912, 456 )
+
+[node name="BatEntity827" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -872, 456 )
+
+[node name="BatEntity828" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -832, 456 )
+
+[node name="BatEntity829" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -920, 496 )
+
+[node name="BatEntity830" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -880, 496 )
+
+[node name="BatEntity831" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -840, 496 )
+
+[node name="BatEntity832" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -920, 536 )
+
+[node name="BatEntity833" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -880, 536 )
+
+[node name="BatEntity834" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -840, 536 )
+
+[node name="BatEntity835" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -920, 576 )
+
+[node name="BatEntity836" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -880, 576 )
+
+[node name="BatEntity837" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -840, 576 )
+
+[node name="BatEntity838" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -920, 616 )
+
+[node name="BatEntity839" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -880, 616 )
+
+[node name="BatEntity840" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -840, 616 )
+
+[node name="BatEntity841" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -664, 376 )
+
+[node name="BatEntity842" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -624, 376 )
+
+[node name="BatEntity843" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -584, 376 )
+
+[node name="BatEntity844" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -656, 416 )
+
+[node name="BatEntity845" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -616, 416 )
+
+[node name="BatEntity846" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -576, 416 )
+
+[node name="BatEntity847" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -664, 456 )
+
+[node name="BatEntity848" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -624, 456 )
+
+[node name="BatEntity849" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -584, 456 )
+
+[node name="BatEntity850" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -672, 496 )
+
+[node name="BatEntity851" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -632, 496 )
+
+[node name="BatEntity852" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -592, 496 )
+
+[node name="BatEntity853" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -672, 536 )
+
+[node name="BatEntity854" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -632, 536 )
+
+[node name="BatEntity855" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -592, 536 )
+
+[node name="BatEntity856" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -672, 576 )
+
+[node name="BatEntity857" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -632, 576 )
+
+[node name="BatEntity858" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -592, 576 )
+
+[node name="BatEntity859" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -672, 616 )
+
+[node name="BatEntity860" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -632, 616 )
+
+[node name="BatEntity861" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -592, 616 )
+
+[node name="BatEntity862" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -656, 96 )
+
+[node name="BatEntity863" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -616, 96 )
+
+[node name="BatEntity864" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -576, 96 )
+
+[node name="BatEntity865" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -648, 136 )
+
+[node name="BatEntity866" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -608, 136 )
+
+[node name="BatEntity867" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -568, 136 )
+
+[node name="BatEntity868" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -656, 176 )
+
+[node name="BatEntity869" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -616, 176 )
+
+[node name="BatEntity870" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -576, 176 )
+
+[node name="BatEntity871" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -664, 216 )
+
+[node name="BatEntity872" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -624, 216 )
+
+[node name="BatEntity873" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -584, 216 )
+
+[node name="BatEntity874" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -664, 256 )
+
+[node name="BatEntity875" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -624, 256 )
+
+[node name="BatEntity876" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -584, 256 )
+
+[node name="BatEntity877" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -664, 296 )
+
+[node name="BatEntity878" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -624, 296 )
+
+[node name="BatEntity879" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -584, 296 )
+
+[node name="BatEntity880" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -664, 336 )
+
+[node name="BatEntity881" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -624, 336 )
+
+[node name="BatEntity882" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -584, 336 )
+
+[node name="BatEntity883" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -288, 88 )
+
+[node name="BatEntity884" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -248, 88 )
+
+[node name="BatEntity885" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -208, 88 )
+
+[node name="BatEntity886" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -280, 128 )
+
+[node name="BatEntity887" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -240, 128 )
+
+[node name="BatEntity888" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -200, 128 )
+
+[node name="BatEntity889" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -288, 168 )
+
+[node name="BatEntity890" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -248, 168 )
+
+[node name="BatEntity891" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -208, 168 )
+
+[node name="BatEntity892" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -296, 208 )
+
+[node name="BatEntity893" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -256, 208 )
+
+[node name="BatEntity894" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -216, 208 )
+
+[node name="BatEntity895" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -296, 248 )
+
+[node name="BatEntity896" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -256, 248 )
+
+[node name="BatEntity897" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -216, 248 )
+
+[node name="BatEntity898" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -296, 288 )
+
+[node name="BatEntity899" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -256, 288 )
+
+[node name="BatEntity900" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -216, 288 )
+
+[node name="BatEntity901" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -296, 328 )
+
+[node name="BatEntity902" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -256, 328 )
+
+[node name="BatEntity903" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -216, 328 )
+
+[node name="BatEntity904" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -168, 88 )
+
+[node name="BatEntity905" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -128, 88 )
+
+[node name="BatEntity906" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -88, 88 )
+
+[node name="BatEntity907" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -160, 128 )
+
+[node name="BatEntity908" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -120, 128 )
+
+[node name="BatEntity909" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -80, 128 )
+
+[node name="BatEntity910" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -168, 168 )
+
+[node name="BatEntity911" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -128, 168 )
+
+[node name="BatEntity912" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -88, 168 )
+
+[node name="BatEntity913" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -176, 208 )
+
+[node name="BatEntity914" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -136, 208 )
+
+[node name="BatEntity915" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -96, 208 )
+
+[node name="BatEntity916" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -176, 248 )
+
+[node name="BatEntity917" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -136, 248 )
+
+[node name="BatEntity918" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -96, 248 )
+
+[node name="BatEntity919" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -176, 288 )
+
+[node name="BatEntity920" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -136, 288 )
+
+[node name="BatEntity921" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -96, 288 )
+
+[node name="BatEntity922" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -176, 328 )
+
+[node name="BatEntity923" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -136, 328 )
+
+[node name="BatEntity924" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -96, 328 )
+
+[node name="BatEntity925" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -176, 376 )
+
+[node name="BatEntity926" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -136, 376 )
+
+[node name="BatEntity927" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -96, 376 )
+
+[node name="BatEntity928" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -168, 416 )
+
+[node name="BatEntity929" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -128, 416 )
+
+[node name="BatEntity930" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -88, 416 )
+
+[node name="BatEntity931" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -176, 456 )
+
+[node name="BatEntity932" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -136, 456 )
+
+[node name="BatEntity933" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -96, 456 )
+
+[node name="BatEntity934" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -184, 496 )
+
+[node name="BatEntity935" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -144, 496 )
+
+[node name="BatEntity936" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -104, 496 )
+
+[node name="BatEntity937" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -184, 536 )
+
+[node name="BatEntity938" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -144, 536 )
+
+[node name="BatEntity939" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -104, 536 )
+
+[node name="BatEntity940" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -184, 576 )
+
+[node name="BatEntity941" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -144, 576 )
+
+[node name="BatEntity942" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -104, 576 )
+
+[node name="BatEntity943" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -184, 616 )
+
+[node name="BatEntity944" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -144, 616 )
+
+[node name="BatEntity945" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -104, 616 )
+
+[node name="BatEntity946" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -296, 376 )
+
+[node name="BatEntity947" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -256, 376 )
+
+[node name="BatEntity948" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -216, 376 )
+
+[node name="BatEntity949" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -288, 416 )
+
+[node name="BatEntity950" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -248, 416 )
+
+[node name="BatEntity951" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -208, 416 )
+
+[node name="BatEntity952" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -296, 456 )
+
+[node name="BatEntity953" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -256, 456 )
+
+[node name="BatEntity954" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -216, 456 )
+
+[node name="BatEntity955" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -304, 496 )
+
+[node name="BatEntity956" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -264, 496 )
+
+[node name="BatEntity957" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -224, 496 )
+
+[node name="BatEntity958" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -304, 536 )
+
+[node name="BatEntity959" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -264, 536 )
+
+[node name="BatEntity960" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -224, 536 )
+
+[node name="BatEntity961" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -304, 576 )
+
+[node name="BatEntity962" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -264, 576 )
+
+[node name="BatEntity963" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -224, 576 )
+
+[node name="BatEntity964" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -304, 616 )
+
+[node name="BatEntity965" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -264, 616 )
+
+[node name="BatEntity966" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -224, 616 )
+
+[node name="BatEntity967" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -48, 376 )
+
+[node name="BatEntity968" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -8, 376 )
+
+[node name="BatEntity969" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 32, 376 )
+
+[node name="BatEntity970" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -40, 416 )
+
+[node name="BatEntity971" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 0, 416 )
+
+[node name="BatEntity972" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 40, 416 )
+
+[node name="BatEntity973" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -48, 456 )
+
+[node name="BatEntity974" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -8, 456 )
+
+[node name="BatEntity975" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 32, 456 )
+
+[node name="BatEntity976" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -56, 496 )
+
+[node name="BatEntity977" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -16, 496 )
+
+[node name="BatEntity978" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 24, 496 )
+
+[node name="BatEntity979" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -56, 536 )
+
+[node name="BatEntity980" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -16, 536 )
+
+[node name="BatEntity981" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 24, 536 )
+
+[node name="BatEntity982" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -56, 576 )
+
+[node name="BatEntity983" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -16, 576 )
+
+[node name="BatEntity984" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 24, 576 )
+
+[node name="BatEntity985" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -56, 616 )
+
+[node name="BatEntity986" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -16, 616 )
+
+[node name="BatEntity987" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 24, 616 )
+
+[node name="BatEntity988" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -40, 96 )
+
+[node name="BatEntity989" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 0, 96 )
+
+[node name="BatEntity990" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 40, 96 )
+
+[node name="BatEntity991" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -32, 136 )
+
+[node name="BatEntity992" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 8, 136 )
+
+[node name="BatEntity993" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 48, 136 )
+
+[node name="BatEntity994" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -40, 176 )
+
+[node name="BatEntity995" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 0, 176 )
+
+[node name="BatEntity996" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 40, 176 )
+
+[node name="BatEntity997" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -48, 216 )
+
+[node name="BatEntity998" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -8, 216 )
+
+[node name="BatEntity999" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 32, 216 )
+
+[node name="BatEntity1000" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -48, 256 )
+
+[node name="BatEntity1001" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -8, 256 )
+
+[node name="BatEntity1002" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 32, 256 )
+
+[node name="BatEntity1003" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -48, 296 )
+
+[node name="BatEntity1004" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -8, 296 )
+
+[node name="BatEntity1005" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 32, 296 )
+
+[node name="BatEntity1006" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -48, 336 )
+
+[node name="BatEntity1007" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -8, 336 )
+
+[node name="BatEntity1008" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 32, 336 )
+
+[node name="BatEntity1009" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -920, 672 )
+
+[node name="BatEntity1010" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -880, 672 )
+
+[node name="BatEntity1011" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -840, 672 )
+
+[node name="BatEntity1012" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -912, 712 )
+
+[node name="BatEntity1013" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -872, 712 )
+
+[node name="BatEntity1014" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -832, 712 )
+
+[node name="BatEntity1015" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -920, 752 )
+
+[node name="BatEntity1016" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -880, 752 )
+
+[node name="BatEntity1017" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -840, 752 )
+
+[node name="BatEntity1018" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -928, 792 )
+
+[node name="BatEntity1019" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -888, 792 )
+
+[node name="BatEntity1020" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -848, 792 )
+
+[node name="BatEntity1021" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -928, 832 )
+
+[node name="BatEntity1022" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -888, 832 )
+
+[node name="BatEntity1023" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -848, 832 )
+
+[node name="BatEntity1024" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -928, 872 )
+
+[node name="BatEntity1025" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -888, 872 )
+
+[node name="BatEntity1026" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -848, 872 )
+
+[node name="BatEntity1027" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -928, 912 )
+
+[node name="BatEntity1028" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -888, 912 )
+
+[node name="BatEntity1029" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -848, 912 )
+
+[node name="BatEntity1030" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -800, 672 )
+
+[node name="BatEntity1031" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -760, 672 )
+
+[node name="BatEntity1032" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -720, 672 )
+
+[node name="BatEntity1033" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -792, 712 )
+
+[node name="BatEntity1034" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -752, 712 )
+
+[node name="BatEntity1035" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -712, 712 )
+
+[node name="BatEntity1036" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -800, 752 )
+
+[node name="BatEntity1037" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -760, 752 )
+
+[node name="BatEntity1038" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -720, 752 )
+
+[node name="BatEntity1039" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -808, 792 )
+
+[node name="BatEntity1040" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -768, 792 )
+
+[node name="BatEntity1041" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -728, 792 )
+
+[node name="BatEntity1042" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -808, 832 )
+
+[node name="BatEntity1043" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -768, 832 )
+
+[node name="BatEntity1044" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -728, 832 )
+
+[node name="BatEntity1045" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -808, 872 )
+
+[node name="BatEntity1046" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -768, 872 )
+
+[node name="BatEntity1047" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -728, 872 )
+
+[node name="BatEntity1048" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -808, 912 )
+
+[node name="BatEntity1049" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -768, 912 )
+
+[node name="BatEntity1050" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -728, 912 )
+
+[node name="BatEntity1051" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -808, 960 )
+
+[node name="BatEntity1052" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -768, 960 )
+
+[node name="BatEntity1053" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -728, 960 )
+
+[node name="BatEntity1054" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -800, 1000 )
+
+[node name="BatEntity1055" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -760, 1000 )
+
+[node name="BatEntity1056" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -720, 1000 )
+
+[node name="BatEntity1057" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -808, 1040 )
+
+[node name="BatEntity1058" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -768, 1040 )
+
+[node name="BatEntity1059" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -728, 1040 )
+
+[node name="BatEntity1060" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -816, 1080 )
+
+[node name="BatEntity1061" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -776, 1080 )
+
+[node name="BatEntity1062" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -736, 1080 )
+
+[node name="BatEntity1063" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -816, 1120 )
+
+[node name="BatEntity1064" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -776, 1120 )
+
+[node name="BatEntity1065" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -736, 1120 )
+
+[node name="BatEntity1066" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -816, 1160 )
+
+[node name="BatEntity1067" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -776, 1160 )
+
+[node name="BatEntity1068" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -736, 1160 )
+
+[node name="BatEntity1069" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -816, 1200 )
+
+[node name="BatEntity1070" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -776, 1200 )
+
+[node name="BatEntity1071" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -736, 1200 )
+
+[node name="BatEntity1072" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -928, 960 )
+
+[node name="BatEntity1073" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -888, 960 )
+
+[node name="BatEntity1074" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -848, 960 )
+
+[node name="BatEntity1075" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -920, 1000 )
+
+[node name="BatEntity1076" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -880, 1000 )
+
+[node name="BatEntity1077" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -840, 1000 )
+
+[node name="BatEntity1078" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -928, 1040 )
+
+[node name="BatEntity1079" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -888, 1040 )
+
+[node name="BatEntity1080" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -848, 1040 )
+
+[node name="BatEntity1081" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -936, 1080 )
+
+[node name="BatEntity1082" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -896, 1080 )
+
+[node name="BatEntity1083" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -856, 1080 )
+
+[node name="BatEntity1084" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -936, 1120 )
+
+[node name="BatEntity1085" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -896, 1120 )
+
+[node name="BatEntity1086" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -856, 1120 )
+
+[node name="BatEntity1087" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -936, 1160 )
+
+[node name="BatEntity1088" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -896, 1160 )
+
+[node name="BatEntity1089" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -856, 1160 )
+
+[node name="BatEntity1090" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -936, 1200 )
+
+[node name="BatEntity1091" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -896, 1200 )
+
+[node name="BatEntity1092" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -856, 1200 )
+
+[node name="BatEntity1093" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -680, 960 )
+
+[node name="BatEntity1094" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -640, 960 )
+
+[node name="BatEntity1095" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -600, 960 )
+
+[node name="BatEntity1096" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -672, 1000 )
+
+[node name="BatEntity1097" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -632, 1000 )
+
+[node name="BatEntity1098" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -592, 1000 )
+
+[node name="BatEntity1099" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -680, 1040 )
+
+[node name="BatEntity1100" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -640, 1040 )
+
+[node name="BatEntity1101" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -600, 1040 )
+
+[node name="BatEntity1102" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -688, 1080 )
+
+[node name="BatEntity1103" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -648, 1080 )
+
+[node name="BatEntity1104" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -608, 1080 )
+
+[node name="BatEntity1105" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -688, 1120 )
+
+[node name="BatEntity1106" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -648, 1120 )
+
+[node name="BatEntity1107" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -608, 1120 )
+
+[node name="BatEntity1108" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -688, 1160 )
+
+[node name="BatEntity1109" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -648, 1160 )
+
+[node name="BatEntity1110" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -608, 1160 )
+
+[node name="BatEntity1111" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -688, 1200 )
+
+[node name="BatEntity1112" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -648, 1200 )
+
+[node name="BatEntity1113" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -608, 1200 )
+
+[node name="BatEntity1114" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -672, 680 )
+
+[node name="BatEntity1115" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -632, 680 )
+
+[node name="BatEntity1116" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -592, 680 )
+
+[node name="BatEntity1117" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -664, 720 )
+
+[node name="BatEntity1118" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -624, 720 )
+
+[node name="BatEntity1119" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -584, 720 )
+
+[node name="BatEntity1120" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -672, 760 )
+
+[node name="BatEntity1121" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -632, 760 )
+
+[node name="BatEntity1122" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -592, 760 )
+
+[node name="BatEntity1123" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -680, 800 )
+
+[node name="BatEntity1124" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -640, 800 )
+
+[node name="BatEntity1125" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -600, 800 )
+
+[node name="BatEntity1126" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -680, 840 )
+
+[node name="BatEntity1127" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -640, 840 )
+
+[node name="BatEntity1128" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -600, 840 )
+
+[node name="BatEntity1129" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -680, 880 )
+
+[node name="BatEntity1130" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -640, 880 )
+
+[node name="BatEntity1131" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -600, 880 )
+
+[node name="BatEntity1132" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -680, 920 )
+
+[node name="BatEntity1133" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -640, 920 )
+
+[node name="BatEntity1134" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -600, 920 )
+
+[node name="BatEntity1135" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -304, 672 )
+
+[node name="BatEntity1136" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -264, 672 )
+
+[node name="BatEntity1137" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -224, 672 )
+
+[node name="BatEntity1138" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -296, 712 )
+
+[node name="BatEntity1139" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -256, 712 )
+
+[node name="BatEntity1140" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -216, 712 )
+
+[node name="BatEntity1141" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -304, 752 )
+
+[node name="BatEntity1142" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -264, 752 )
+
+[node name="BatEntity1143" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -224, 752 )
+
+[node name="BatEntity1144" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -312, 792 )
+
+[node name="BatEntity1145" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -272, 792 )
+
+[node name="BatEntity1146" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -232, 792 )
+
+[node name="BatEntity1147" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -312, 832 )
+
+[node name="BatEntity1148" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -272, 832 )
+
+[node name="BatEntity1149" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -232, 832 )
+
+[node name="BatEntity1150" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -312, 872 )
+
+[node name="BatEntity1151" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -272, 872 )
+
+[node name="BatEntity1152" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -232, 872 )
+
+[node name="BatEntity1153" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -312, 912 )
+
+[node name="BatEntity1154" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -272, 912 )
+
+[node name="BatEntity1155" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -232, 912 )
+
+[node name="BatEntity1156" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -184, 672 )
+
+[node name="BatEntity1157" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -144, 672 )
+
+[node name="BatEntity1158" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -104, 672 )
+
+[node name="BatEntity1159" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -176, 712 )
+
+[node name="BatEntity1160" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -136, 712 )
+
+[node name="BatEntity1161" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -96, 712 )
+
+[node name="BatEntity1162" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -184, 752 )
+
+[node name="BatEntity1163" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -144, 752 )
+
+[node name="BatEntity1164" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -104, 752 )
+
+[node name="BatEntity1165" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -192, 792 )
+
+[node name="BatEntity1166" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -152, 792 )
+
+[node name="BatEntity1167" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -112, 792 )
+
+[node name="BatEntity1168" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -192, 832 )
+
+[node name="BatEntity1169" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -152, 832 )
+
+[node name="BatEntity1170" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -112, 832 )
+
+[node name="BatEntity1171" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -192, 872 )
+
+[node name="BatEntity1172" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -152, 872 )
+
+[node name="BatEntity1173" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -112, 872 )
+
+[node name="BatEntity1174" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -192, 912 )
+
+[node name="BatEntity1175" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -152, 912 )
+
+[node name="BatEntity1176" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -112, 912 )
+
+[node name="BatEntity1177" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -192, 960 )
+
+[node name="BatEntity1178" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -152, 960 )
+
+[node name="BatEntity1179" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -112, 960 )
+
+[node name="BatEntity1180" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -184, 1000 )
+
+[node name="BatEntity1181" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -144, 1000 )
+
+[node name="BatEntity1182" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -104, 1000 )
+
+[node name="BatEntity1183" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -192, 1040 )
+
+[node name="BatEntity1184" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -152, 1040 )
+
+[node name="BatEntity1185" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -112, 1040 )
+
+[node name="BatEntity1186" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -200, 1080 )
+
+[node name="BatEntity1187" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -160, 1080 )
+
+[node name="BatEntity1188" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -120, 1080 )
+
+[node name="BatEntity1189" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -200, 1120 )
+
+[node name="BatEntity1190" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -160, 1120 )
+
+[node name="BatEntity1191" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -120, 1120 )
+
+[node name="BatEntity1192" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -200, 1160 )
+
+[node name="BatEntity1193" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -160, 1160 )
+
+[node name="BatEntity1194" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -120, 1160 )
+
+[node name="BatEntity1195" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -200, 1200 )
+
+[node name="BatEntity1196" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -160, 1200 )
+
+[node name="BatEntity1197" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -120, 1200 )
+
+[node name="BatEntity1198" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -312, 960 )
+
+[node name="BatEntity1199" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -272, 960 )
+
+[node name="BatEntity1200" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -232, 960 )
+
+[node name="BatEntity1201" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -304, 1000 )
+
+[node name="BatEntity1202" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -264, 1000 )
+
+[node name="BatEntity1203" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -224, 1000 )
+
+[node name="BatEntity1204" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -312, 1040 )
+
+[node name="BatEntity1205" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -272, 1040 )
+
+[node name="BatEntity1206" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -232, 1040 )
+
+[node name="BatEntity1207" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -320, 1080 )
+
+[node name="BatEntity1208" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -280, 1080 )
+
+[node name="BatEntity1209" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -240, 1080 )
+
+[node name="BatEntity1210" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -320, 1120 )
+
+[node name="BatEntity1211" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -280, 1120 )
+
+[node name="BatEntity1212" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -240, 1120 )
+
+[node name="BatEntity1213" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -320, 1160 )
+
+[node name="BatEntity1214" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -280, 1160 )
+
+[node name="BatEntity1215" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -240, 1160 )
+
+[node name="BatEntity1216" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -320, 1200 )
+
+[node name="BatEntity1217" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -280, 1200 )
+
+[node name="BatEntity1218" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -240, 1200 )
+
+[node name="BatEntity1219" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -64, 960 )
+
+[node name="BatEntity1220" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -24, 960 )
+
+[node name="BatEntity1221" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 16, 960 )
+
+[node name="BatEntity1222" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -56, 1000 )
+
+[node name="BatEntity1223" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -16, 1000 )
+
+[node name="BatEntity1224" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 24, 1000 )
+
+[node name="BatEntity1225" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -64, 1040 )
+
+[node name="BatEntity1226" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -24, 1040 )
+
+[node name="BatEntity1227" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 16, 1040 )
+
+[node name="BatEntity1228" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -72, 1080 )
+
+[node name="BatEntity1229" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -32, 1080 )
+
+[node name="BatEntity1230" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 8, 1080 )
+
+[node name="BatEntity1231" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -72, 1120 )
+
+[node name="BatEntity1232" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -32, 1120 )
+
+[node name="BatEntity1233" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 8, 1120 )
+
+[node name="BatEntity1234" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -72, 1160 )
+
+[node name="BatEntity1235" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -32, 1160 )
+
+[node name="BatEntity1236" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 8, 1160 )
+
+[node name="BatEntity1237" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -72, 1200 )
+
+[node name="BatEntity1238" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -32, 1200 )
+
+[node name="BatEntity1239" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 8, 1200 )
+
+[node name="BatEntity1240" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -56, 680 )
+
+[node name="BatEntity1241" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -16, 680 )
+
+[node name="BatEntity1242" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 24, 680 )
+
+[node name="BatEntity1243" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -48, 720 )
+
+[node name="BatEntity1244" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -8, 720 )
+
+[node name="BatEntity1245" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 32, 720 )
+
+[node name="BatEntity1246" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -56, 760 )
+
+[node name="BatEntity1247" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -16, 760 )
+
+[node name="BatEntity1248" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 24, 760 )
+
+[node name="BatEntity1249" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -64, 800 )
+
+[node name="BatEntity1250" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -24, 800 )
+
+[node name="BatEntity1251" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 16, 800 )
+
+[node name="BatEntity1252" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -64, 840 )
+
+[node name="BatEntity1253" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -24, 840 )
+
+[node name="BatEntity1254" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 16, 840 )
+
+[node name="BatEntity1255" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -64, 880 )
+
+[node name="BatEntity1256" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -24, 880 )
+
+[node name="BatEntity1257" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 16, 880 )
+
+[node name="BatEntity1258" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -64, 920 )
+
+[node name="BatEntity1259" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( -24, 920 )
+
+[node name="BatEntity1260" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 16, 920 )
+
+[node name="BatEntity1261" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1096, 680 )
+
+[node name="BatEntity1262" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1136, 680 )
+
+[node name="BatEntity1263" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1176, 680 )
+
+[node name="BatEntity1264" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1104, 720 )
+
+[node name="BatEntity1265" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1144, 720 )
+
+[node name="BatEntity1266" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1184, 720 )
+
+[node name="BatEntity1267" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1096, 760 )
+
+[node name="BatEntity1268" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1136, 760 )
+
+[node name="BatEntity1269" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1176, 760 )
+
+[node name="BatEntity1270" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1088, 800 )
+
+[node name="BatEntity1271" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1128, 800 )
+
+[node name="BatEntity1272" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1168, 800 )
+
+[node name="BatEntity1273" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1088, 840 )
+
+[node name="BatEntity1274" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1128, 840 )
+
+[node name="BatEntity1275" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1168, 840 )
+
+[node name="BatEntity1276" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1088, 880 )
+
+[node name="BatEntity1277" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1128, 880 )
+
+[node name="BatEntity1278" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1168, 880 )
+
+[node name="BatEntity1279" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1088, 920 )
+
+[node name="BatEntity1280" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1128, 920 )
+
+[node name="BatEntity1281" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1168, 920 )
+
+[node name="BatEntity1282" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1216, 680 )
+
+[node name="BatEntity1283" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1256, 680 )
+
+[node name="BatEntity1284" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1296, 680 )
+
+[node name="BatEntity1285" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1224, 720 )
+
+[node name="BatEntity1286" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1264, 720 )
+
+[node name="BatEntity1287" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1304, 720 )
+
+[node name="BatEntity1288" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1216, 760 )
+
+[node name="BatEntity1289" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1256, 760 )
+
+[node name="BatEntity1290" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1296, 760 )
+
+[node name="BatEntity1291" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1208, 800 )
+
+[node name="BatEntity1292" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1248, 800 )
+
+[node name="BatEntity1293" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1288, 800 )
+
+[node name="BatEntity1294" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1208, 840 )
+
+[node name="BatEntity1295" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1248, 840 )
+
+[node name="BatEntity1296" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1288, 840 )
+
+[node name="BatEntity1297" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1208, 880 )
+
+[node name="BatEntity1298" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1248, 880 )
+
+[node name="BatEntity1299" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1288, 880 )
+
+[node name="BatEntity1300" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1208, 920 )
+
+[node name="BatEntity1301" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1248, 920 )
+
+[node name="BatEntity1302" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1288, 920 )
+
+[node name="BatEntity1303" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1208, 968 )
+
+[node name="BatEntity1304" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1248, 968 )
+
+[node name="BatEntity1305" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1288, 968 )
+
+[node name="BatEntity1306" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1216, 1008 )
+
+[node name="BatEntity1307" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1256, 1008 )
+
+[node name="BatEntity1308" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1296, 1008 )
+
+[node name="BatEntity1309" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1208, 1048 )
+
+[node name="BatEntity1310" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1248, 1048 )
+
+[node name="BatEntity1311" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1288, 1048 )
+
+[node name="BatEntity1312" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1200, 1088 )
+
+[node name="BatEntity1313" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1240, 1088 )
+
+[node name="BatEntity1314" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1280, 1088 )
+
+[node name="BatEntity1315" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1200, 1128 )
+
+[node name="BatEntity1316" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1240, 1128 )
+
+[node name="BatEntity1317" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1280, 1128 )
+
+[node name="BatEntity1318" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1200, 1168 )
+
+[node name="BatEntity1319" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1240, 1168 )
+
+[node name="BatEntity1320" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1280, 1168 )
+
+[node name="BatEntity1321" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1200, 1208 )
+
+[node name="BatEntity1322" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1240, 1208 )
+
+[node name="BatEntity1323" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1280, 1208 )
+
+[node name="BatEntity1324" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1088, 968 )
+
+[node name="BatEntity1325" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1128, 968 )
+
+[node name="BatEntity1326" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1168, 968 )
+
+[node name="BatEntity1327" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1096, 1008 )
+
+[node name="BatEntity1328" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1136, 1008 )
+
+[node name="BatEntity1329" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1176, 1008 )
+
+[node name="BatEntity1330" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1088, 1048 )
+
+[node name="BatEntity1331" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1128, 1048 )
+
+[node name="BatEntity1332" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1168, 1048 )
+
+[node name="BatEntity1333" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1080, 1088 )
+
+[node name="BatEntity1334" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1120, 1088 )
+
+[node name="BatEntity1335" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1160, 1088 )
+
+[node name="BatEntity1336" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1080, 1128 )
+
+[node name="BatEntity1337" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1120, 1128 )
+
+[node name="BatEntity1338" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1160, 1128 )
+
+[node name="BatEntity1339" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1080, 1168 )
+
+[node name="BatEntity1340" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1120, 1168 )
+
+[node name="BatEntity1341" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1160, 1168 )
+
+[node name="BatEntity1342" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1080, 1208 )
+
+[node name="BatEntity1343" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1120, 1208 )
+
+[node name="BatEntity1344" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1160, 1208 )
+
+[node name="BatEntity1345" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1336, 968 )
+
+[node name="BatEntity1346" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1376, 968 )
+
+[node name="BatEntity1347" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1416, 968 )
+
+[node name="BatEntity1348" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1344, 1008 )
+
+[node name="BatEntity1349" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1384, 1008 )
+
+[node name="BatEntity1350" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1424, 1008 )
+
+[node name="BatEntity1351" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1336, 1048 )
+
+[node name="BatEntity1352" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1376, 1048 )
+
+[node name="BatEntity1353" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1416, 1048 )
+
+[node name="BatEntity1354" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1328, 1088 )
+
+[node name="BatEntity1355" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1368, 1088 )
+
+[node name="BatEntity1356" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1408, 1088 )
+
+[node name="BatEntity1357" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1328, 1128 )
+
+[node name="BatEntity1358" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1368, 1128 )
+
+[node name="BatEntity1359" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1408, 1128 )
+
+[node name="BatEntity1360" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1328, 1168 )
+
+[node name="BatEntity1361" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1368, 1168 )
+
+[node name="BatEntity1362" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1408, 1168 )
+
+[node name="BatEntity1363" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1328, 1208 )
+
+[node name="BatEntity1364" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1368, 1208 )
+
+[node name="BatEntity1365" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1408, 1208 )
+
+[node name="BatEntity1366" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1344, 688 )
+
+[node name="BatEntity1367" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1384, 688 )
+
+[node name="BatEntity1368" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1424, 688 )
+
+[node name="BatEntity1369" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1352, 728 )
+
+[node name="BatEntity1370" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1392, 728 )
+
+[node name="BatEntity1371" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1432, 728 )
+
+[node name="BatEntity1372" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1344, 768 )
+
+[node name="BatEntity1373" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1384, 768 )
+
+[node name="BatEntity1374" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1424, 768 )
+
+[node name="BatEntity1375" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1336, 808 )
+
+[node name="BatEntity1376" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1376, 808 )
+
+[node name="BatEntity1377" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1416, 808 )
+
+[node name="BatEntity1378" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1336, 848 )
+
+[node name="BatEntity1379" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1376, 848 )
+
+[node name="BatEntity1380" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1416, 848 )
+
+[node name="BatEntity1381" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1336, 888 )
+
+[node name="BatEntity1382" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1376, 888 )
+
+[node name="BatEntity1383" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1416, 888 )
+
+[node name="BatEntity1384" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1336, 928 )
+
+[node name="BatEntity1385" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1376, 928 )
+
+[node name="BatEntity1386" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1416, 928 )
+
+[node name="BatEntity1387" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1712, 680 )
+
+[node name="BatEntity1388" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1752, 680 )
+
+[node name="BatEntity1389" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1792, 680 )
+
+[node name="BatEntity1390" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1720, 720 )
+
+[node name="BatEntity1391" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1760, 720 )
+
+[node name="BatEntity1392" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1800, 720 )
+
+[node name="BatEntity1393" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1712, 760 )
+
+[node name="BatEntity1394" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1752, 760 )
+
+[node name="BatEntity1395" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1792, 760 )
+
+[node name="BatEntity1396" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1704, 800 )
+
+[node name="BatEntity1397" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1744, 800 )
+
+[node name="BatEntity1398" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1784, 800 )
+
+[node name="BatEntity1399" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1704, 840 )
+
+[node name="BatEntity1400" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1744, 840 )
+
+[node name="BatEntity1401" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1784, 840 )
+
+[node name="BatEntity1402" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1704, 880 )
+
+[node name="BatEntity1403" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1744, 880 )
+
+[node name="BatEntity1404" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1784, 880 )
+
+[node name="BatEntity1405" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1704, 920 )
+
+[node name="BatEntity1406" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1744, 920 )
+
+[node name="BatEntity1407" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1784, 920 )
+
+[node name="BatEntity1408" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1832, 680 )
+
+[node name="BatEntity1409" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1872, 680 )
+
+[node name="BatEntity1410" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1912, 680 )
+
+[node name="BatEntity1411" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1840, 720 )
+
+[node name="BatEntity1412" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1880, 720 )
+
+[node name="BatEntity1413" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1920, 720 )
+
+[node name="BatEntity1414" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1832, 760 )
+
+[node name="BatEntity1415" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1872, 760 )
+
+[node name="BatEntity1416" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1912, 760 )
+
+[node name="BatEntity1417" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1824, 800 )
+
+[node name="BatEntity1418" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1864, 800 )
+
+[node name="BatEntity1419" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1904, 800 )
+
+[node name="BatEntity1420" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1824, 840 )
+
+[node name="BatEntity1421" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1864, 840 )
+
+[node name="BatEntity1422" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1904, 840 )
+
+[node name="BatEntity1423" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1824, 880 )
+
+[node name="BatEntity1424" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1864, 880 )
+
+[node name="BatEntity1425" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1904, 880 )
+
+[node name="BatEntity1426" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1824, 920 )
+
+[node name="BatEntity1427" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1864, 920 )
+
+[node name="BatEntity1428" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1904, 920 )
+
+[node name="BatEntity1429" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1824, 968 )
+
+[node name="BatEntity1430" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1864, 968 )
+
+[node name="BatEntity1431" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1904, 968 )
+
+[node name="BatEntity1432" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1832, 1008 )
+
+[node name="BatEntity1433" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1872, 1008 )
+
+[node name="BatEntity1434" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1912, 1008 )
+
+[node name="BatEntity1435" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1824, 1048 )
+
+[node name="BatEntity1436" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1864, 1048 )
+
+[node name="BatEntity1437" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1904, 1048 )
+
+[node name="BatEntity1438" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1816, 1088 )
+
+[node name="BatEntity1439" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1856, 1088 )
+
+[node name="BatEntity1440" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1896, 1088 )
+
+[node name="BatEntity1441" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1816, 1128 )
+
+[node name="BatEntity1442" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1856, 1128 )
+
+[node name="BatEntity1443" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1896, 1128 )
+
+[node name="BatEntity1444" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1816, 1168 )
+
+[node name="BatEntity1445" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1856, 1168 )
+
+[node name="BatEntity1446" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1896, 1168 )
+
+[node name="BatEntity1447" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1816, 1208 )
+
+[node name="BatEntity1448" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1856, 1208 )
+
+[node name="BatEntity1449" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1896, 1208 )
+
+[node name="BatEntity1450" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1704, 968 )
+
+[node name="BatEntity1451" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1744, 968 )
+
+[node name="BatEntity1452" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1784, 968 )
+
+[node name="BatEntity1453" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1712, 1008 )
+
+[node name="BatEntity1454" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1752, 1008 )
+
+[node name="BatEntity1455" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1792, 1008 )
+
+[node name="BatEntity1456" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1704, 1048 )
+
+[node name="BatEntity1457" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1744, 1048 )
+
+[node name="BatEntity1458" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1784, 1048 )
+
+[node name="BatEntity1459" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1696, 1088 )
+
+[node name="BatEntity1460" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1736, 1088 )
+
+[node name="BatEntity1461" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1776, 1088 )
+
+[node name="BatEntity1462" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1696, 1128 )
+
+[node name="BatEntity1463" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1736, 1128 )
+
+[node name="BatEntity1464" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1776, 1128 )
+
+[node name="BatEntity1465" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1696, 1168 )
+
+[node name="BatEntity1466" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1736, 1168 )
+
+[node name="BatEntity1467" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1776, 1168 )
+
+[node name="BatEntity1468" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1696, 1208 )
+
+[node name="BatEntity1469" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1736, 1208 )
+
+[node name="BatEntity1470" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1776, 1208 )
+
+[node name="BatEntity1471" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1952, 968 )
+
+[node name="BatEntity1472" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1992, 968 )
+
+[node name="BatEntity1473" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2032, 968 )
+
+[node name="BatEntity1474" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1960, 1008 )
+
+[node name="BatEntity1475" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2000, 1008 )
+
+[node name="BatEntity1476" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2040, 1008 )
+
+[node name="BatEntity1477" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1952, 1048 )
+
+[node name="BatEntity1478" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1992, 1048 )
+
+[node name="BatEntity1479" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2032, 1048 )
+
+[node name="BatEntity1480" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1944, 1088 )
+
+[node name="BatEntity1481" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1984, 1088 )
+
+[node name="BatEntity1482" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2024, 1088 )
+
+[node name="BatEntity1483" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1944, 1128 )
+
+[node name="BatEntity1484" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1984, 1128 )
+
+[node name="BatEntity1485" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2024, 1128 )
+
+[node name="BatEntity1486" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1944, 1168 )
+
+[node name="BatEntity1487" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1984, 1168 )
+
+[node name="BatEntity1488" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2024, 1168 )
+
+[node name="BatEntity1489" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1944, 1208 )
+
+[node name="BatEntity1490" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1984, 1208 )
+
+[node name="BatEntity1491" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2024, 1208 )
+
+[node name="BatEntity1492" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1960, 688 )
+
+[node name="BatEntity1493" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2000, 688 )
+
+[node name="BatEntity1494" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2040, 688 )
+
+[node name="BatEntity1495" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1968, 728 )
+
+[node name="BatEntity1496" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2008, 728 )
+
+[node name="BatEntity1497" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2048, 728 )
+
+[node name="BatEntity1498" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1960, 768 )
+
+[node name="BatEntity1499" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2000, 768 )
+
+[node name="BatEntity1500" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2040, 768 )
+
+[node name="BatEntity1501" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1952, 808 )
+
+[node name="BatEntity1502" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1992, 808 )
+
+[node name="BatEntity1503" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2032, 808 )
+
+[node name="BatEntity1504" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1952, 848 )
+
+[node name="BatEntity1505" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1992, 848 )
+
+[node name="BatEntity1506" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2032, 848 )
+
+[node name="BatEntity1507" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1952, 888 )
+
+[node name="BatEntity1508" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1992, 888 )
+
+[node name="BatEntity1509" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2032, 888 )
+
+[node name="BatEntity1510" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1952, 928 )
+
+[node name="BatEntity1511" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1992, 928 )
+
+[node name="BatEntity1512" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 2032, 928 )
 
 [node name="Pumpkins" type="Node2D" parent="."]
 
@@ -43,13 +4586,13 @@ margin_left = -48.0
 margin_bottom = 48.0
 step = 0.01
 value = 75.0
-texture_progress = ExtResource( 2 )
+texture_progress = ExtResource( 4 )
 fill_mode = 4
 
 [node name="Panneau" type="Sprite" parent="UI/Control"]
 position = Vector2( 426, 415 )
-texture = ExtResource( 4 )
+texture = ExtResource( 6 )
 
 [node name="Crâne" type="Sprite" parent="UI/Control"]
 position = Vector2( 1015, 599 )
-texture = ExtResource( 3 )
+texture = ExtResource( 5 )

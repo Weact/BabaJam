@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scenes/Map/LEVEL.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Character/Bat/Player/BatPlayer.tscn" type="PackedScene" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Assets/LEVEL/Crâne.png" type="Texture" id=5]
 [ext_resource path="res://Assets/LEVEL/Panneau.png" type="Texture" id=6]
 [ext_resource path="res://Assets/font/SecretHalloween.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://Assets/candies/Bonbon.png" type="Texture" id=8]
 
 [sub_resource type="DynamicFont" id=1]
 size = 30
@@ -47,15 +48,23 @@ value = 75.0
 texture_progress = ExtResource( 4 )
 fill_mode = 4
 
-[node name="candies_counter" type="Label" parent="UI"]
-margin_left = 18.0
-margin_top = 18.0
-margin_right = 117.0
-margin_bottom = 117.0
-custom_fonts/font = SubResource( 1 )
-text = "
+[node name="VBoxContainer" type="HBoxContainer" parent="UI/Control"]
+margin_right = 132.0
+margin_bottom = 64.0
 
-"
+[node name="TextureRect" type="TextureRect" parent="UI/Control/VBoxContainer"]
+margin_right = 64.0
+margin_bottom = 64.0
+texture = ExtResource( 8 )
+stretch_mode = 5
+
+[node name="candies_counter" type="Label" parent="UI/Control/VBoxContainer"]
+margin_left = 68.0
+margin_top = 16.0
+margin_right = 108.0
+margin_bottom = 47.0
+custom_fonts/font = SubResource( 1 )
+text = "0 x"
 
 [node name="Decorations" type="Node2D" parent="."]
 
@@ -83,7 +92,7 @@ position = Vector2( 592, 344 )
 [node name="Entities" type="Node2D" parent="Bats"]
 
 [node name="BatEntity" parent="Bats/Entities" instance=ExtResource( 3 )]
-position = Vector2( 104, 96 )
+position = Vector2( 184, 96 )
 
 [node name="BatEntity2" parent="Bats/Entities" instance=ExtResource( 3 )]
 position = Vector2( 144, 96 )
@@ -131,7 +140,7 @@ position = Vector2( 176, 256 )
 position = Vector2( 96, 296 )
 
 [node name="pumpkin_timer" type="Timer" parent="."]
-wait_time = 2.0
+wait_time = 0.5
 autostart = true
 
 [node name="game_timer" type="Timer" parent="."]

@@ -11,7 +11,7 @@ onready var pumpkins_container : Node2D = get_node("Pumpkins")
 onready var candies_container : Node2D = get_node("Candies")
 onready var game_timer : Timer = get_node("game_timer")
 onready var game_timer_progress : TextureProgress = get_node("UI/Control/game_timer_progress")
-onready var candies_counter_text : Label = get_node("UI/candies_counter")
+onready var candies_counter_text : Label = get_node("UI/Control/VBoxContainer/candies_counter")
 var candies_counter : int = 0
 var difficulty_multiplier : int = 0
 
@@ -49,7 +49,7 @@ func _on_pumpkin_destroyed(pumpkin) -> void :
 	new_candy_instance.set_position(pumpkin.get_position())
 	new_candy_instance.connect("tree_exiting" , self , "_on_candy_destroyed" , [new_candy_instance])
 	candies_container.call_deferred("add_child" , new_candy_instance , true)
-	game_timer.set_wait_time(game_timer.get_time_left()+2)
+	game_timer.start(game_timer.get_time_left() + 2.0)
 	game_timer_progress.set_max(game_timer.wait_time)
 
 func _on_candy_destroyed(candy) -> void :

@@ -61,7 +61,7 @@ func generate_new_control_point_index() -> int:
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	randomize()
+	pass
 
 func _physics_process(delta: float) -> void:
 	pass

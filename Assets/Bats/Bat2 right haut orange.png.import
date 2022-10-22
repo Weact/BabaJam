@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bonbon.png-44a369893072a442c7099f5892a097dc.stex"
+path="res://.import/Bat2 right haut orange.png-046725b66dcebf454293ad40214a99f1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/candies/Bonbon.png"
-dest_files=[ "res://.import/Bonbon.png-44a369893072a442c7099f5892a097dc.stex" ]
+source_file="res://Assets/Bats/Bat2 right haut orange.png"
+dest_files=[ "res://.import/Bat2 right haut orange.png-046725b66dcebf454293ad40214a99f1.stex" ]
 
 [params]
 

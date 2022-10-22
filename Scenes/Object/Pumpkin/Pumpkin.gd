@@ -53,7 +53,7 @@ func add_pumpkin_hitpoint() -> void :
 	set_real_pumpkin_hitpoints(get_real_pumpkin_hitpoints() + add)
 	
 func randomize_pumpkin_texture() -> void :
-	var rand : int  = randi() %3
+	var rand : int  = randi() % 3
 	if rand == 0 :
 		pumpkin_sprite.set_texture(pumpkin_texture_1)
 		pumpkin_type = 1

@@ -21,7 +21,7 @@ editor_draw_limits = true
 editor_draw_drag_margin = true
 
 [node name="AnimatedSprite" parent="." index="1"]
-frame = 0
+animation = "IdlePurple"
 
 [node name="ControlPoints" type="Node2D" parent="." index="3"]
 

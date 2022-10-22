@@ -7,7 +7,7 @@ func get_class() -> String: return "BatPlayer"
 onready var bat_entity_scene : PackedScene = preload("res://Scenes/Character/Bat/Entities/BatEntity.tscn")
 onready var control_points_container : Node2D = get_node("ControlPoints")
 
-var level : int = 0
+var total_bats : int = 1
 
 func is_point_taken(index: int) -> bool:
 	var p = control_points_container.get_child(index)
@@ -37,6 +37,8 @@ func assign_new_bat_to_random_control_point() -> bool:
 		control_point_node.call_deferred("add_child", new_bat_instance)
 	else:
 		return false
+	
+	update_total_bats()
 	return true
 
 func get_random_point_in_container():
@@ -47,10 +49,12 @@ func clear_all_controlled_bats() -> void:
 		if point.get_child_count() > 0:
 			for bat in point.get_children():
 				bat.call_deferred("queue_free")
-	level += 1
 
 func upgrade_bat() -> void:
 	clear_all_controlled_bats()
+
+func update_total_bats() -> void:
+	total_bats += 1
 
 func generate_new_control_point_index() -> int:
 	return randi() % control_points_container.get_child_count()
@@ -76,7 +80,12 @@ func _on_bat_area_entered(area : Area2D) -> void:
 			if assign_new_bat_to_random_control_point():
 				body.control()
 		elif body.is_class("Pumpkin") and body.has_method("damage"):
+			body.damage_taken = total_bats
+			body.is_damaging = true
 			body.damage()
 
-func _on_bat_area_exited(_area : Area2D) -> void:
-	pass
+func _on_bat_area_exited(area : Area2D) -> void:
+	var body = area.get_owner()
+	if is_instance_valid(body):
+		if body.is_class("Pumpkin") and body.has_method("stop_damage"):
+			body.stop_damage()

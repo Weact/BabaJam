@@ -85,6 +85,8 @@ func _on_bat_area_entered(area : Area2D) -> void:
 			body.damage()
 		elif body.is_class("NPC") and body.has_method("trade") :
 			body.trade(GAME.candies)
+		elif body.is_class("CreditBase") and body.has_method("show"):
+			body.show()
 
 func _on_bat_area_exited(area : Area2D) -> void:
 	var body = area.get_owner()
@@ -93,3 +95,5 @@ func _on_bat_area_exited(area : Area2D) -> void:
 			body.stop_damage()
 		if body.is_class("Candy"):
 			body.queue_free()
+		elif body.is_class("CreditBase") and body.has_method("hide"):
+			body.hide()

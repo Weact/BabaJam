@@ -8,9 +8,9 @@
 [ext_resource path="res://Assets/font/SecretHalloween.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://Assets/candies/Bonbon.png" type="Texture" id=7]
 [ext_resource path="res://Scenes/NPC/NPC.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Assets/refer/Julien.png" type="Texture" id=9]
-[ext_resource path="res://Assets/refer/Weact.png" type="Texture" id=10]
-[ext_resource path="res://Assets/refer/Kory.png" type="Texture" id=11]
+[ext_resource path="res://Scenes/Credits/CreditJulien.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Credits/CreditWeact.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Credits/CreditKerian.tscn" type="PackedScene" id=11]
 
 [sub_resource type="Environment" id=4]
 glow_enabled = true
@@ -176,24 +176,22 @@ __meta__ = {
 [node name="MapDecorations" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
 format = 1
-tile_data = PoolIntArray( -131068, 1, 0, -131060, 2, 0, 22, 4, 0, 131069, 1, 0, 65542, 0, 0, 65552, 3, 0, 131075, 3, 0, 131084, 1, 0, 196615, 4, 0, 196627, 2, 0, 393213, 2, 0, 327687, 2, 0, 327691, 3, 0, 327696, 0, 0, 327702, 0, 0, 393218, 0, 0, 393220, 4, 0, 393224, 1, 0, 524292, 1, 0, 524299, 2, 0, 524303, 3, 0, 655358, 3, 0, 589843, 4, 0, 655361, 0, 0, 655369, 4, 0, 786435, 0, 0, 786444, 3, 0, 786454, 0, 0 )
+tile_data = PoolIntArray( -131068, 1, 0, -131060, 2, 0, 22, 4, 0, 131069, 1, 0, 65542, 0, 0, 65552, 3, 0, 131075, 3, 0, 131084, 1, 0, 196615, 4, 0, 196627, 2, 0, 393213, 2, 0, 327687, 2, 0, 327696, 0, 0, 327702, 0, 0, 393218, 0, 0, 393220, 4, 0, 393224, 1, 0, 393230, 3, 0, 524292, 1, 0, 524299, 2, 0, 524303, 3, 0, 655358, 3, 0, 589843, 4, 0, 655361, 0, 0, 655369, 4, 0, 786435, 0, 0, 786444, 3, 0, 786454, 0, 0 )
 
-[node name="Julien" type="Sprite" parent="."]
-position = Vector2( 632, 64 )
-texture = ExtResource( 9 )
+[node name="CreditJulien" parent="." instance=ExtResource( 9 )]
+position = Vector2( 851, 296 )
 
-[node name="Kory" type="Sprite" parent="."]
-position = Vector2( 440, 264 )
-texture = ExtResource( 11 )
+[node name="CreditWeact" parent="." instance=ExtResource( 10 )]
+position = Vector2( 986, 509 )
 
-[node name="Weact" type="Sprite" parent="."]
-position = Vector2( 1176, 464 )
-texture = ExtResource( 10 )
+[node name="CreditKerian" parent="." instance=ExtResource( 11 )]
+position = Vector2( 478, 193 )
+rotation = 0.00176734
 
 [node name="NPC" type="Node2D" parent="."]
 
 [node name="NPC" parent="NPC" instance=ExtResource( 8 )]
-position = Vector2( 560, 64 )
+position = Vector2( 791, 299 )
 
 [node name="Pumpkins" type="Node2D" parent="."]
 
@@ -210,49 +208,76 @@ position = Vector2( 592, 344 )
 position = Vector2( 184, 96 )
 
 [node name="BatEntity2" parent="Bats/Entities" instance=ExtResource( 3 )]
-position = Vector2( 144, 96 )
+position = Vector2( 132, 223 )
 
 [node name="BatEntity3" parent="Bats/Entities" instance=ExtResource( 3 )]
-position = Vector2( 184, 96 )
+position = Vector2( 90, 314 )
 
 [node name="BatEntity4" parent="Bats/Entities" instance=ExtResource( 3 )]
-position = Vector2( 112, 136 )
+position = Vector2( 244, 301 )
 
 [node name="BatEntity5" parent="Bats/Entities" instance=ExtResource( 3 )]
-position = Vector2( 152, 136 )
+position = Vector2( 69, 452 )
 
 [node name="BatEntity6" parent="Bats/Entities" instance=ExtResource( 3 )]
-position = Vector2( 192, 136 )
+position = Vector2( 94, 557 )
 
 [node name="BatEntity7" parent="Bats/Entities" instance=ExtResource( 3 )]
-position = Vector2( 104, 176 )
+position = Vector2( 183, 481 )
 
 [node name="BatEntity8" parent="Bats/Entities" instance=ExtResource( 3 )]
-position = Vector2( 144, 176 )
+position = Vector2( 223, 596 )
 
 [node name="BatEntity9" parent="Bats/Entities" instance=ExtResource( 3 )]
-position = Vector2( 184, 176 )
+position = Vector2( 359, 505 )
 
 [node name="BatEntity10" parent="Bats/Entities" instance=ExtResource( 3 )]
-position = Vector2( 96, 216 )
+position = Vector2( 414, 591 )
 
 [node name="BatEntity11" parent="Bats/Entities" instance=ExtResource( 3 )]
-position = Vector2( 136, 216 )
+position = Vector2( 557, 493 )
 
 [node name="BatEntity12" parent="Bats/Entities" instance=ExtResource( 3 )]
-position = Vector2( 176, 216 )
+position = Vector2( 877, 596 )
 
 [node name="BatEntity13" parent="Bats/Entities" instance=ExtResource( 3 )]
-position = Vector2( 96, 256 )
+position = Vector2( 867, 456 )
 
 [node name="BatEntity14" parent="Bats/Entities" instance=ExtResource( 3 )]
-position = Vector2( 136, 256 )
+position = Vector2( 1011, 409 )
 
 [node name="BatEntity15" parent="Bats/Entities" instance=ExtResource( 3 )]
-position = Vector2( 176, 256 )
+position = Vector2( 949, 282 )
 
 [node name="BatEntity16" parent="Bats/Entities" instance=ExtResource( 3 )]
-position = Vector2( 96, 296 )
+position = Vector2( 1093, 247 )
+
+[node name="BatEntity17" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 954, 131 )
+
+[node name="BatEntity18" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 1207, 110 )
+
+[node name="BatEntity19" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 935, 4 )
+
+[node name="BatEntity20" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 765, 120 )
+
+[node name="BatEntity21" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 734, 8 )
+
+[node name="BatEntity22" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 615, 193 )
+
+[node name="BatEntity23" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 400, -28 )
+
+[node name="BatEntity24" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 339, 106 )
+
+[node name="BatEntity25" parent="Bats/Entities" instance=ExtResource( 3 )]
+position = Vector2( 281, 10 )
 
 [node name="pumpkin_timer" type="Timer" parent="."]
 wait_time = 0.5

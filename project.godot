@@ -29,6 +29,11 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Scenes/candy/Candy.gd"
 }, {
+"base": "Sprite",
+"class": "CreditBase",
+"language": "GDScript",
+"path": "res://Scenes/Credits/CreditBase.gd"
+}, {
 "base": "Node2D",
 "class": "NPC",
 "language": "GDScript",
@@ -44,6 +49,7 @@ _global_script_class_icons={
 "BatEntity": "",
 "BatPlayer": "",
 "Candy": "",
+"CreditBase": "",
 "NPC": "",
 "Pumpkin": ""
 }

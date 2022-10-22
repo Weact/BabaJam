@@ -89,3 +89,5 @@ func _on_bat_area_exited(area : Area2D) -> void:
 	if is_instance_valid(body):
 		if body.is_class("Pumpkin") and body.has_method("stop_damage"):
 			body.stop_damage()
+		if body.is_class("Candy") :
+			body.queue_free()

@@ -13,3 +13,7 @@ format = 1
 [node name="Pumpkins" type="Node2D" parent="."]
 
 [node name="Candies" type="Node2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
+autostart = true

@@ -14,15 +14,24 @@ export var pumpkin_texture_mid_3 : Texture = null
 export var pumpkin_texture_low : Texture = null
 onready var pumpkin_sprite : Sprite = get_node("Sprite")
 onready var hp_bar : TextureProgress = get_node("hp_bar")
-var pumpkin_hitpoints : float = real_pumpkin_hitpoints/10
 var pumpkin_type : int 
 var base_hitpoints = real_pumpkin_hitpoints
+var is_damaging : bool = false
+var damage_taken : int = 0
+var time_elapsed : float = 0
 
 func _ready():
 	randomize_pumpkin_texture()
 	hp_bar.set_max(real_pumpkin_hitpoints)
 	hp_bar.set_value(hp_bar.max_value)
-	
+
+func _physics_process(delta: float) -> void:
+	if is_damaging:
+		time_elapsed += delta
+		if time_elapsed >= 0.5:
+			damage()
+			time_elapsed = 0.0
+
 func get_real_pumpkin_hitpoints() -> int :
 	return real_pumpkin_hitpoints
 	
@@ -68,4 +77,7 @@ func update_pumpkin_texture_low() -> void :
 	pumpkin_sprite.set_texture(pumpkin_texture_low)
 
 func damage() -> void:
-	set_real_pumpkin_hitpoints(get_real_pumpkin_hitpoints() - 1)
+	set_real_pumpkin_hitpoints(get_real_pumpkin_hitpoints() - damage_taken)
+
+func stop_damage() -> void:
+	is_damaging = false

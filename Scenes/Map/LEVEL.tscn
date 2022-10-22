@@ -20,7 +20,7 @@ wait_time = 2.0
 autostart = true
 
 [node name="game_timer" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 30.0
 autostart = true
 
 [node name="UI" type="CanvasLayer" parent="."]

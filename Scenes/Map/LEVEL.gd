@@ -79,4 +79,6 @@ func _on_bat_added(n : int) -> void:
 
 func _on_npc_trade_success(cn : int) -> void:
 	candies_counter -= cn
+	GAME.candies = candies_counter
 	candies_counter_text.text = "X " + str(candies_counter)
+	add_bat()

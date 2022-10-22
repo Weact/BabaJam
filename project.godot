@@ -32,7 +32,7 @@ _global_script_classes=[ {
 "base": "Node2D",
 "class": "NPC",
 "language": "GDScript",
-"path": "res://Scenes/Map/NPC.gd"
+"path": "res://Scenes/NPC/NPC.gd"
 }, {
 "base": "Node2D",
 "class": "Pumpkin",

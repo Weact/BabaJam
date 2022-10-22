@@ -4,6 +4,7 @@
 [ext_resource path="res://Scenes/Character/Bat/Player/BatPlayer.gd" type="Script" id=2]
 
 [node name="BatPlayer" instance=ExtResource( 1 )]
+modulate = Color( 1.2, 1.2, 1.2, 1 )
 script = ExtResource( 2 )
 
 [node name="Camera2D" type="Camera2D" parent="." index="0"]
@@ -20,7 +21,7 @@ drag_margin_bottom = 0.4
 editor_draw_limits = true
 editor_draw_drag_margin = true
 
-[node name="ControlPoints" type="Node2D" parent="." index="3"]
+[node name="ControlPoints" type="Node2D" parent="." index="2"]
 
 [node name="Point1" type="Position2D" parent="ControlPoints" index="0"]
 position = Vector2( 0, -32 )
@@ -45,3 +46,6 @@ position = Vector2( -32, 0 )
 
 [node name="Point8" type="Position2D" parent="ControlPoints" index="7"]
 position = Vector2( -32, -32 )
+
+[node name="AnimatedSprite" parent="." index="3"]
+frame = 1

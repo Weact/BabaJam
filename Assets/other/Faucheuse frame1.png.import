@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bat_Idle_Up.png-dc13e27d21edf8b7945e39aad737d85f.stex"
+path="res://.import/Faucheuse frame1.png-73f367b5ffb15d1eb8226a201cafe276.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Bats/Bat_Idle_Up.png"
-dest_files=[ "res://.import/Bat_Idle_Up.png-dc13e27d21edf8b7945e39aad737d85f.stex" ]
+source_file="res://Assets/other/Faucheuse frame1.png"
+dest_files=[ "res://.import/Faucheuse frame1.png-73f367b5ffb15d1eb8226a201cafe276.stex" ]
 
 [params]
 
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=false
+detect_3d=true
 svg/scale=1.0

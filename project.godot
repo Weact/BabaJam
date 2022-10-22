@@ -10,12 +10,24 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Node2D",
-"class": "Bat",
+"class": "BatBase",
 "language": "GDScript",
-"path": "res://Scenes/Character/Bat/Bat.gd"
+"path": "res://Scenes/Character/Bat/BatBase.gd"
+}, {
+"base": "BatBase",
+"class": "BatEntity",
+"language": "GDScript",
+"path": "res://Scenes/Character/Bat/Entities/BatEntity.gd"
+}, {
+"base": "BatBase",
+"class": "BatPlayer",
+"language": "GDScript",
+"path": "res://Scenes/Character/Bat/Player/BatPlayer.gd"
 } ]
 _global_script_class_icons={
-"Bat": ""
+"BatBase": "",
+"BatEntity": "",
+"BatPlayer": ""
 }
 
 [application]
@@ -30,10 +42,8 @@ GAME="*res://Global/GAME.tscn"
 
 [display]
 
-window/size/width=1920
-window/size/height=1080
-window/size/test_width=1920
-window/size/test_height=1080
+window/size/width=1280
+window/size/height=720
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
 

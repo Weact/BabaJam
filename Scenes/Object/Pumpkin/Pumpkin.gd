@@ -28,7 +28,7 @@ func _ready():
 func _physics_process(delta: float) -> void:
 	if is_damaging:
 		time_elapsed += delta
-		if time_elapsed >= 0.5:
+		if time_elapsed >= 0.2:
 			damage()
 			time_elapsed = 0.0
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Bonbon.png-44a369893072a442c7099f5892a097dc.stex"
+path="res://.import/arbre.png-ad695a0b2e24dc23e5795dda893d0e0f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/candies/Bonbon.png"
-dest_files=[ "res://.import/Bonbon.png-44a369893072a442c7099f5892a097dc.stex" ]
+source_file="res://Assets/Decorations/arbres/arbre.png"
+dest_files=[ "res://.import/arbre.png-ad695a0b2e24dc23e5795dda893d0e0f.stex" ]
 
 [params]
 

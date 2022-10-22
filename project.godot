@@ -23,11 +23,17 @@ _global_script_classes=[ {
 "class": "BatPlayer",
 "language": "GDScript",
 "path": "res://Scenes/Character/Bat/Player/BatPlayer.gd"
+}, {
+"base": "Node2D",
+"class": "Pumpkin",
+"language": "GDScript",
+"path": "res://Scenes/Object/Pumpkin/Pumpkin.gd"
 } ]
 _global_script_class_icons={
 "BatBase": "",
 "BatEntity": "",
-"BatPlayer": ""
+"BatPlayer": "",
+"Pumpkin": ""
 }
 
 [application]
@@ -45,7 +51,6 @@ GAME="*res://Global/GAME.tscn"
 window/size/width=1280
 window/size/height=720
 window/stretch/mode="2d"
-window/stretch/aspect="keep"
 
 [gui]
 

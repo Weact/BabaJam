@@ -178,16 +178,6 @@ tile_set = SubResource( 2 )
 format = 1
 tile_data = PoolIntArray( -131068, 1, 0, -131060, 2, 0, 22, 4, 0, 131069, 1, 0, 65542, 0, 0, 65552, 3, 0, 131075, 3, 0, 131084, 1, 0, 196615, 4, 0, 196627, 2, 0, 393213, 2, 0, 327687, 2, 0, 327696, 0, 0, 327702, 0, 0, 393218, 0, 0, 393220, 4, 0, 393224, 1, 0, 393230, 3, 0, 524292, 1, 0, 524299, 2, 0, 524303, 3, 0, 655358, 3, 0, 589843, 4, 0, 655361, 0, 0, 655369, 4, 0, 786435, 0, 0, 786444, 3, 0, 786454, 0, 0 )
 
-[node name="CreditJulien" parent="." instance=ExtResource( 9 )]
-position = Vector2( 851, 296 )
-
-[node name="CreditWeact" parent="." instance=ExtResource( 10 )]
-position = Vector2( 986, 509 )
-
-[node name="CreditKerian" parent="." instance=ExtResource( 11 )]
-position = Vector2( 478, 193 )
-rotation = 0.00176734
-
 [node name="NPC" type="Node2D" parent="."]
 
 [node name="NPC" parent="NPC" instance=ExtResource( 8 )]
@@ -198,9 +188,6 @@ position = Vector2( 791, 299 )
 [node name="Candies" type="Node2D" parent="."]
 
 [node name="Bats" type="Node2D" parent="."]
-
-[node name="BatPlayer" parent="Bats" instance=ExtResource( 2 )]
-position = Vector2( 592, 344 )
 
 [node name="Entities" type="Node2D" parent="Bats"]
 
@@ -278,6 +265,19 @@ position = Vector2( 339, 106 )
 
 [node name="BatEntity25" parent="Bats/Entities" instance=ExtResource( 3 )]
 position = Vector2( 281, 10 )
+
+[node name="CreditJulien" parent="Bats" instance=ExtResource( 9 )]
+position = Vector2( 851, 296 )
+
+[node name="CreditWeact" parent="Bats" instance=ExtResource( 10 )]
+position = Vector2( 986, 509 )
+
+[node name="CreditKerian" parent="Bats" instance=ExtResource( 11 )]
+position = Vector2( 478, 193 )
+rotation = 0.00176734
+
+[node name="BatPlayer" parent="Bats" instance=ExtResource( 2 )]
+position = Vector2( 592, 344 )
 
 [node name="pumpkin_timer" type="Timer" parent="."]
 wait_time = 0.5

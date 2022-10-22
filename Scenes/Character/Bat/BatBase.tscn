@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scenes/Character/Bat/BatBase.gd" type="Script" id=1]
 [ext_resource path="res://Assets/Bats/Bat idle bas.png" type="Texture" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://Assets/Bats/Bat2 idle haut orange.png" type="Texture" id=7]
 [ext_resource path="res://Assets/Bats/Bat2 idle bas.png" type="Texture" id=8]
 [ext_resource path="res://Assets/Bats/Bat2 idle bas orange.png" type="Texture" id=9]
+[ext_resource path="res://Assets/Bats/Bat idle shiny haut blanc.png" type="Texture" id=10]
+[ext_resource path="res://Assets/Bats/Bat idle shiny bas blanc.png" type="Texture" id=11]
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
@@ -30,6 +32,11 @@ animations = [ {
 "frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
 "loop": true,
 "name": "IdlePurple",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "IdleShiny",
 "speed": 7.0
 } ]
 

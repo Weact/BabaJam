@@ -6,7 +6,9 @@ export var skull_texture : Texture = null
 export var sign_texture : Texture = null
 onready var candy_scene : PackedScene = preload("res://Scenes/candy/Candy.tscn")
 onready var pumpkin_scene : PackedScene = preload("res://Scenes/Object/Pumpkin/Pumpkin.tscn")
+onready var bat_scene : PackedScene = preload("res://Scenes/Character/Bat/Entities/BatEntity.tscn")
 onready var pumpkin_timer : Timer = get_node("pumpkin_timer")
+onready var bat_container : Node2D = get_node("Bats/Entities")
 onready var pumpkins_container : Node2D = get_node("Pumpkins")
 onready var candies_container : Node2D = get_node("Candies")
 onready var game_timer : Timer = get_node("game_timer")
@@ -25,6 +27,7 @@ func _ready() -> void:
 	pumpkin_timer.connect("timeout" , self , "_on_pumpkin_timer_timeout")
 	game_timer.connect("timeout", self , "_on_game_timer_timeout")
 	GAME.connect("bat_added", self, "_on_bat_added")
+	GAME.connect("npc_trade_success", self, "_on_npc_trade_success")
 	game_timer_progress.set_max(game_timer.wait_time)
 	game_timer_progress.set_value(game_timer_progress.max_value)
 	bat_icon.set_texture(GAME.bat_icon_texture)
@@ -43,6 +46,14 @@ func add_pumpkin(new_pumpkin_hp : int = 5) -> void :
 	pumpkins_container.call_deferred("add_child", new_pumpkin_instance, true)
 	difficulty_multiplier += 1
 
+func add_bat() -> void:
+	var height : float = get_viewport().size.y
+	var width : float = get_viewport().size.x
+	var coord : Vector2 = Vector2(rand_range(0,width),rand_range(0,height))
+	var new_bat_instance = bat_scene.instance()
+	new_bat_instance.set_position(coord)
+	bat_container.call_deferred("add_child", new_bat_instance, true)
+
 func _on_pumpkin_timer_timeout() -> void :
 	add_pumpkin(5 + difficulty_multiplier)
 
@@ -60,7 +71,12 @@ func _on_pumpkin_destroyed(pumpkin) -> void :
 
 func _on_candy_destroyed(candy) -> void :
 	candies_counter += 1
+	GAME.candies = candies_counter
 	candies_counter_text.text = "X " + str(candies_counter)
 
 func _on_bat_added(n : int) -> void:
 	bat_counter_label.text = "X " + str(n)
+
+func _on_npc_trade_success(cn : int) -> void:
+	candies_counter -= cn
+	candies_counter_text.text = "X " + str(candies_counter)

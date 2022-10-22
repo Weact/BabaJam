@@ -1,10 +1,12 @@
 extends Node
 
 signal bat_added(total_bats)
+signal npc_trade_success(candies_cost)
 
 var models : int = 4
 var bat_model : String = "IdlePurple"
 var bat_icon_texture : Texture = null
+var candies : int = 0
 
 func _ready() -> void:
 	randomize()
@@ -32,6 +34,7 @@ func set_new_mouse_mode(new_mode) -> void:
 func get_bat_model() -> String:
 	var model : String = ""
 	var chosen_model_index : int = randi() % models
+	var is_shiny : int = randi() % 4000
 	match(chosen_model_index):
 		0:
 			model = "IdlePurple"
@@ -47,4 +50,8 @@ func get_bat_model() -> String:
 			bat_icon_texture = load("res://Assets/Bats/Bat face 2 orange.png")
 		_:
 			model = "IdlePurple"
+	
+	if is_shiny > 3998:
+		model = "IdleShiny"
+		bat_icon_texture = load("res://Assets/Bats/Bat face 1 shiny.png")
 	return model

@@ -24,5 +24,8 @@ tracks/0/keys = {
 modulate = Color( 1, 1, 1, 0.176471 )
 script = ExtResource( 2 )
 
+[node name="AnimatedSprite" parent="." index="0"]
+animation = "IdleShiny"
+
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]
 anims/Appear = SubResource( 1 )
